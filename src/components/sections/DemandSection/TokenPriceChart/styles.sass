@@ -1,0 +1,127 @@
+.token-price-chart
+  .darkened-block
+    margin-top: 125px !important
+    padding: 0 !important
+    display: flex
+
+    @media (max-width: 1199px)
+      flex-direction: column
+
+    .token-price-chart--chart
+      display: flex
+      flex: 1
+      flex-direction: column
+
+      .token-price-chart--chart-title
+        color: #fff
+        font-family: Open_Sans_Bold, sans-serif
+        font-size: 16px
+        height: 56px
+        width: 312px
+        background: url('./img/chart_title_bg.png') center center no-repeat
+        display: flex
+        align-items: center
+        padding-left: 40px
+
+      .token-price-chart--chart-wrapper
+        position: relative
+        padding: 30px
+        display: flex
+        flex-direction: column
+
+        canvas
+          position: relative
+          z-index: 2
+
+        .line
+          position: absolute
+          top: 0
+          left: 0
+          bottom: 110px
+          border-right: 2px solid #424242
+          transform: translateY(16px)
+          z-index: 1
+
+          .circle
+            position: absolute
+            right: -7px
+            display: block
+            width: 11px
+            height: 11px
+            // border: 2px solid #424242
+            border-radius: 50%
+            background: #1a242f
+
+        .data
+          font-size: 14px
+
+          @media (max-width: 767px)
+            font-size: 12px
+            
+
+    .token-price-chart--info
+      display: flex
+      width: 304px
+      color: #fff
+      flex-direction: column
+
+      @media (max-width: 1199px)
+        flex-direction: column !important
+        width: auto
+        border-top: 1px solid rgba(179, 179, 179, 0.4)
+
+      .token-price-chart--info--wrapper
+        padding-left: 36px
+        padding-right: 34px
+        margin-top: 35px
+        border-left: 1px solid rgba(179, 179, 179, 0.4)
+
+        @media (max-width: 1199px)
+          border-left: 0
+          display: flex
+          margin-bottom: 40px
+          justify-content: space-around
+
+        .inner-section-1, .inner-section-2
+          padding: 15px
+          flex: 0.4
+
+      .token-price-chart--info--title
+        height: 57px
+        width: 100%
+        background-color: #000
+        color: #fff
+        font-family: Open_Sans_Bold, sans-serif
+        font-size: 16px
+        padding-left: 33px
+        display: flex
+        align-items: center
+
+        @media (max-width: 1199px)
+          height: 56px
+          width: 312px !important
+          background: url('./img/chart_title_bg.png') center center no-repeat
+          background-color: transparent
+
+      a
+        font-family: Open_Sans, sans-serif
+        font-size: 12px
+        color: #2FBAFD
+        text-decoration: underline
+
+      .token-price-chart--info--month
+        color: #2FBAFD
+        font-family: Open_Sans_Semibold, sans-serif
+        font-size: 20px
+
+      .token-price-chart--info--text
+        color: #fff
+        font-family: Open_Sans, sans-serif
+        font-size: 14px
+        margin-top: 12px
+
+        .b
+          font-family: Open_Sans_Bold, sans-serif
+
+
+

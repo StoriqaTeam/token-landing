@@ -1,0 +1,208 @@
+.invested-wrapper
+  width: 100%
+
+  .meanings
+    color: #fff
+
+    .count
+      font-size: 18px
+      white-space: nowrap
+
+    .hint
+      font-size: 14px
+
+  .thermometer-wrap
+    position: relative
+    color: #fff
+
+    .thermometer
+      position: relative
+      width: 100%
+      height: 28px
+      padding: 2px
+      border: 2px solid #2eb6f7
+
+      svg
+        .cls-1
+          fill: #2fbafd
+          font-size: 16px
+          font-family: Helvetica
+
+        .cls-2 
+          fill: none
+          stroke: #3fa9f5
+          stroke-linecap: round
+          stroke-linejoin: round
+          stroke-miterlimit: 10
+
+    .thermometer-item
+      position: relative
+      display: inline-block
+
+      span
+        position: relative
+        top: -5px
+        right: -15%
+        color: #000
+        font-size: 14px
+        font-weight: bold
+
+    .signature
+      img
+        width: 150px
+
+        @media (max-width: 767px)
+          width: 100px
+
+      &.soft-cap
+        position: absolute
+        bottom: 30px
+        left: calc(20% - 120px)
+
+        @media (max-width: 767px)
+          left: calc(20% - 67px)
+
+        .text
+          position: absolute
+          top: 3px
+          left: 23px
+
+          @media (max-width: 767px)
+            line-height: 20px
+            left: 25px
+
+      &.hard-cap
+        position: absolute
+        bottom: 30px
+        right: -29px
+
+        @media (max-width: 767px)
+          right: -32px
+
+        .text
+          position: absolute
+          top: 3px
+          left: 15px
+
+          @media (max-width: 767px)
+            line-height: 20px
+            left: 23px
+
+      .hint
+        font-size: 14px
+        white-space: nowrap
+
+      .count
+        font-size: 14px
+        white-space: nowrap
+
+      .signature-right
+        left: auto
+        right: 0px
+
+      .count
+        position: relative
+
+    .pre-ico
+      height: 20px
+      // background: linear-gradient(-180deg, #2eb6f7 0%, #259dd6 96%)
+      // border-top: 2px solid #2eb6f7
+      // border-bottom: 2px solid #259dd6
+      border-right: 0
+
+      background: linear-gradient(to left top, rgba(13, 130, 187, 0) 53.9%, #2eb6f7 51%, #2eb6f7 78%, rgba(13, 130, 187, 0) 70%), linear-gradient(to left top, #2eb6f7 28%, rgba(189, 107, 127, 0) 30%)
+      background-size: 2em 6em
+      background-color: #259dd6
+
+      .pen
+        position: absolute
+        right: 0
+        border-right: 1px solid #fff
+        height: 37px
+
+        .dollars
+          position: absolute
+          top: 31px
+          right: 12px
+          color: #fff
+          white-space: nowrap
+
+          @media (max-width: 575px)
+            left: 12px
+            right: auto
+
+        .tokens
+          position: absolute
+          top: 31px
+          left: 12px
+          color: #fff
+          white-space: nowrap
+
+          @media (max-width: 575px)
+            top: 50px
+            left: 12px
+            right: auto
+
+        &:before
+          content: ''
+          position: absolute
+          top: 37px
+          left: -4px
+          display: block
+          width: 9px
+          height: 9px
+          background: #2eb6f7
+          border: 1px solid #fff
+          border-radius: 50%
+
+    .ico
+      position: relative
+      height: 20px
+      // border: 2px solid #2eb6f7
+      border-left: 0
+
+  .time
+    color: #fff
+    border: 1px solid rgba(255, 255, 255, 0.5)
+
+    .stq-count
+      .hint, .rate
+        font-size: 16px
+
+      .count
+        font-size: 18px
+
+      > div
+        margin: 0 auto
+
+    .countdown
+      .countdown-wrapper
+        position: relative
+        top: 5px
+
+      .description
+        font-size: 14px
+
+      .countdown-col
+        font-size: 30px
+
+        &:before
+          left: -14px
+
+        & p
+          margin-bottom: 0
+
+          strong
+            font-weight: bold
+
+          span
+            // display: none
+
+  .clean-countdown
+    .description
+      color: #fff
+      font-size: 20px
+
+
+
+

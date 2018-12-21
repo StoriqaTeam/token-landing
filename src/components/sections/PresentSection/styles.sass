@@ -1,0 +1,260 @@
+@keyframes shadow
+  0%
+    box-shadow: 0 0 4px 0px #2FBAFD
+  50%
+    box-shadow: 0 0 9px 1px #2FBAFD
+  100%
+    box-shadow: 0 0 4px 0px #2FBAFD
+
+.present-section
+  position: relative
+  // padding-top: 100px
+  padding-bottom: 100px
+  // background: #151f31
+  z-index: 101
+
+  .present-body
+    padding-left: 15px
+    padding-right: 15px
+
+  .left-half
+    padding-right: 100px
+    padding-left: 130px
+
+    @media (max-width: 1199px)
+      padding-right: 80px
+      padding-left: 80px
+
+    @media (max-width: 991px)
+      padding: 30px 150px
+      border: 1px solid rgba(201,201,201,.26)
+
+    @media (max-width: 767px)
+      padding-right: 80px
+      padding-left: 80px
+
+    @media (max-width: 413px)
+      padding-right: 50px
+      padding-left: 60px
+
+  .right-half
+    padding-right: 220px
+    padding-left: 10px
+
+    @media (max-width: 1199px)
+      padding-right: 160px
+      padding-left: 0
+
+    @media (max-width: 991px)
+      margin-top: 30px
+      padding: 30px 150px
+      border: 1px solid rgba(201,201,201,.26)
+
+    @media (max-width: 767px)
+      padding-right: 80px
+      padding-left: 80px
+
+    @media (max-width: 413px)
+      padding-right: 50px
+      padding-left: 60px
+
+  .half-title
+    font-size: 24px
+    color: #7E7E7E
+
+  .stick
+    position: relative
+
+    &:before
+      content: ''
+      position: absolute
+      top: -310px
+      right: 106px
+      border-right: 1px solid #2FBAFD
+      height: 320px
+      z-index: 2
+
+      @media (max-width: 1199px)
+        top: -275px
+        height: 288px
+
+      @media (max-width: 991px)
+        display: none
+
+    &:after
+      content: ''
+      position: absolute
+      top: -315px
+      right: 103px
+      border-radius: 50%
+      background-color: #2FBAFD
+      width: 7px
+      height: 7px
+      z-index: 2
+
+      @media (max-width: 1199px)
+        top: -280px
+
+      @media (max-width: 991px)
+        display: none
+
+    .left
+      position: relative
+
+      &:after
+        content: ''
+        position: absolute
+        top: -14px
+        right: -4px
+        border-radius: 50%
+        background-color: #2FBAFD
+        width: 7px
+        height: 7px
+        z-index: 2
+
+        @media (max-width: 991px)
+          display: none
+
+  .present-img
+    margin-bottom: 40px
+
+    img
+      display: block
+      width: 100%
+
+  .small-block
+    position: relative
+    margin-top: 20px
+    padding: 20px
+    background-color: #19232E
+    border: 1px solid rgba(201,201,201,.26)
+    border-radius: 8px
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.33)
+    z-index: 1
+
+  .item-block
+    & + .item-block
+      margin-top: 10px
+
+  .hanger
+    position: absolute
+    top: 23px
+    left: -45px
+    padding: 1px 6px 1px 7px
+    text-align: center
+    background-color: #283957
+    color: #7E7E7E
+    border-radius: 4px
+    font-size: 10px
+
+  .left
+    width: calc(100% - 85px)
+    padding-right: 20px
+    border-right: 1px solid rgba(201,201,201,.26)
+    font-size: 16px
+
+    @media (max-width: 350px)
+      font-size: 12px
+      width: calc(100% - 60px)
+
+  .right
+    position: relative
+    width: 85px
+    margin-top: 5px
+    padding-left: 25px
+    font-size: 10px
+    color: #919191
+
+    @media (max-width: 350px)
+      width: 60px
+
+    &:before
+      content: ''
+      position: absolute
+      top: 3px
+      left: 11px
+      display: block
+      width: 8px
+      height: 8px
+      border-radius: 50%
+
+    &.green
+      &:before
+        background-color: #70C94F
+
+    &.blue
+      &:before
+        background-color: #2FBAFD
+        animation: shadow 1.5s linear infinite
+
+    &.grey
+      &:before
+        background-color: #6A6A6A
+
+  .chapter
+
+    .chapter-title
+      margin-top: 35px
+      font-size: 18px
+
+    .chapter-items
+      position: relative
+
+      &:before
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        right: -20px
+        width: 12px
+        border-top: 1px solid #283957
+        border-bottom: 1px solid #283957
+        border-right: 1px solid #283957
+
+        @media (max-width: 767px)
+          border-top: 0
+          border-bottom: 0
+          right: -10px
+          border-right: 2px solid #283957
+
+      .additionally
+        position: absolute
+        top: 50%
+        right: -90px
+        margin-top: -23px
+
+        @media (max-width: 767px)
+          top: 100%
+          right: -30px
+          margin-top: -17px
+
+        .text
+          position: absolute
+          left: 0
+          font-size: 12px
+          margin-top: 35px
+
+          @media (max-width: 767px)
+            font-size: 10px
+            transform-origin: 0 100%
+            transform: rotate(-90deg)
+            white-space: nowrap
+            margin: 0
+            top: 0
+
+        img
+          height: 28px
+
+          @media (max-width: 767px)
+            display: none
+
+  .core-bg
+    display: none
+    position: absolute
+    width: 130%
+    margin-left: -15%
+
+    img
+      display: block
+      width: 100%
+

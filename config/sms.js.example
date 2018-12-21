@@ -1,0 +1,7 @@
+exports.smsSetup = {
+  url: 'https://www.smstraffic.ru/multi.php',
+  login: 'crowdfunding',
+  password: 'txH6fkt268',
+  originator: 'Boomstarter',
+  rus: '5'
+};

@@ -1,0 +1,93 @@
+.menu
+  position: relative
+  height:
+
+  .botton
+    cursor: pointer
+
+    & > span
+      position: relative
+      top: 0
+      display: block
+      width: 40px
+      height: 5px
+      border-radius: 4px
+      background-color: #2eb6f7
+      transform: rotate(0)
+      transition: all 0.2s ease-out
+
+      @media (max-width: 450px)
+        width: 35px
+        height: 4px
+
+      & + span
+        margin-top: 7px
+
+        @media (max-width: 450px)
+          margin-top: 6px
+
+    &.cross
+      & > span:nth-child(1)
+        position: relative
+        top: 12px
+        transform: rotate(45deg)
+
+      & > span:nth-child(2)
+        opacity: 0
+        transform: translateX(-20px)
+
+      & > span:nth-child(3)
+        position: relative
+        top: -12px
+        transform: rotate(-45deg)
+
+  .item
+    margin-left: 15px
+    width: 100%
+    white-space: nowrap
+
+    @media (max-width: 1304px)
+      margin-left: 15px
+
+    @media (max-width: 992px)
+      margin-left: 0
+      width: auto
+
+  .user
+    img
+      display: block
+      width: 32px
+
+  .burger-items
+    position: absolute
+    top: 40px
+    right: 0
+    background-color: #000
+
+    &.hidden
+      display: none
+
+    .item
+      a, & > div
+        display: block
+        padding: 10px 25px
+        cursor: pointer
+        transition: all 0.2s ease-out
+        color: #ccc
+        cursor: pointer
+
+        &.active
+          color: white
+
+        @media (max-width: 992px)
+          &:hover
+            color: white
+
+  .default-items
+    a
+      color: #ccc !important
+      cursor: pointer
+      transition: all 0.2s ease-out
+
+      &:hover
+        color: #fff !important

@@ -1,0 +1,209 @@
+[
+  {
+    "name": "Peter Xu",
+    "photo": "avatars/24.jpg",
+    "sn": {
+      "in": "https://www.linkedin.com/in/peter-xu/"
+    }
+  },
+  {
+    "name": "Ruslan Tugushev",
+    "photo": "avatars/1.jpg",    
+    "sn": {
+      "in": "https://www.linkedin.com/in/rt001/",
+      "fb": "https://www.facebook.com/rtugushev"
+    }
+  },
+  {
+    "name": "Wulf Kaal",
+    "photo": "avatars/33.jpg"
+  },
+  {
+    "name": "Adeniyi Adebayo",
+    "photo": "avatars/31.jpg"
+  },
+  {
+    "name": "Prabhsimran Singh",
+    "photo": "avatars/29.jpg"
+  },
+  {
+    "name": "Nadiya Cherkasova",
+    "photo": "avatars/22.jpg",
+    "sn": {
+      "fb": "https://www.facebook.com/nadiya.cherkasova"
+    }
+  },
+  {
+    "name": "Sergey Fedorinov",
+    "photo": "avatars/25.jpg"
+  },
+  {
+    "name": "Maxim Tadevosyan",
+    "photo": "avatars/26.jpg",
+    "sn": {
+      "fb": "https://www.facebook.com/max.tadevosyan"
+    }
+  },
+  {
+    "name": "Alexey Antonov",
+    "photo": "avatars/27.jpg",
+    "sn": {
+      "in": "https://www.linkedin.com/in/auantonov/"
+    }
+  },
+  {
+    "name": "Nikolai Oreshkin",
+    "photo": "avatars/28.jpg",
+    "sn": {
+      "in": "https://www.linkedin.com/in/nikolaioreshkin/"
+    }
+  },
+  {
+    "name": "Evgeny Gavrilin",
+    "photo": "avatars/21.jpg",
+    "sn": {
+      "in": "https://www.linkedin.com/in/evgeny-gavrilin-04855b6b",
+      "fb": "https://www.facebook.com/profile.php?id=100000155146017"
+    }
+  },
+  {
+    "name": "Andrian Galkin",
+    "photo": "avatars/2.jpg",
+    "sn": {
+      "in": "https://www.linkedin.com/in/andrian-galkin-517888114/",
+      "fb": "https://www.facebook.com/andriangalkin"
+    }
+  },
+  {
+    "name": "Evgeniy Popov",
+    "photo": "avatars/3.jpg",
+    "sn": {
+      "in": "https://www.linkedin.com/in/evgeniy-popov-a891aa5b/",
+      "fb": "https://www.facebook.com/evgeny.popov.332"
+    }
+  },
+  {
+    "name": "Vadim Krekotin",
+    "photo": "avatars/30.jpg"
+  },
+  {
+    "name": "Alena Matsiukhina",
+    "photo": "avatars/32.jpg"
+  },
+  {
+    "name": "Sergey Prilutskiy",
+    "photo": "avatars/5.jpg",
+    "sn": {
+      "fb": "https://www.facebook.com/prilutskiy.sergey"
+    }
+  },
+  {
+    "name": "Aleksey Karasev",
+    "photo": "avatars/6.jpg",
+    "sn": {
+      "fb": "https://www.facebook.com/karasev.alexey"
+    }
+  },
+  {
+    "name": "Nikita Kortunov",
+    "photo": "avatars/7.jpg",
+    "sn": {
+      "fb": "https://www.facebook.com/nikita.shmidt.3"
+    }
+  },
+  {
+    "name": "Ivan Golenko",
+    "photo": "avatars/8.jpg",
+    "sn": {
+      "in": "https://www.linkedin.com/in/ivan-golenko-7aa24560/",
+      "fb": "https://www.facebook.com/ivgolenko"
+    }
+  },
+  {
+    "name": "Gregory Zotov",
+    "photo": "avatars/9.jpg",
+    "sn": {
+      "in": "https://www.linkedin.com/in/gregzotov/",
+      "fb": "https://www.facebook.com/zotov.greg"
+    }
+  },
+  {
+    "name": "Anton Alekseenko",
+    "photo": "avatars/10.jpg",
+    "sn": {
+      "in": "https://www.linkedin.com/in/antonalekseeko/",
+      "fb": "https://www.facebook.com/ant.alekseenko"
+    }
+  },
+  {
+    "name": "Anastasia Taved",
+    "photo": "avatars/11.jpg",
+    "sn": {
+      "fb": "https://www.facebook.com/taved"
+    }
+  },
+  {
+    "name": "Vadim Antonov",
+    "photo": "avatars/12.jpg",
+    "sn": {
+      "fb": "https://www.facebook.com/vadim.antonov.31"
+    }
+  },
+  {
+    "name": "Elena Lvova",
+    "photo": "avatars/13.jpg",
+    "sn": {
+      "fb": "https://www.facebook.com/profile.php?id=100015604064749"
+    }
+  },
+  {
+    "name": "Anna Karbysheva",
+    "photo": "avatars/14.jpg",
+    "sn": {
+      "fb": "https://www.facebook.com/melodko"
+    }
+  },
+  {
+    "name": "Aleksey Levenets",
+    "photo": "avatars/15.jpg",
+    "sn": {
+      "fb": "https://www.facebook.com/profile.php?id=100000932317697"
+    }
+  },
+  {
+    "name": "Ilya Saldin",
+    "photo": "avatars/16.jpg",
+    "sn": {
+      "in": "https://www.linkedin.com/in/ilya-saldin-49200140",
+      "fb": "https://www.facebook.com/saldin.iliya"
+    }
+  },
+  {
+    "name": "Yury Vasilchikov",
+    "photo": "avatars/17.jpg",
+    "sn": {
+      "fb": "https://www.facebook.com/yuriy.vasilchikov"
+    }
+  },
+  {
+    "name": "Maksim Suchkov",
+    "photo": "avatars/18.jpg",
+    "sn": {
+      "fb": "https://www.facebook.com/profile.php?id=100003431163784"
+    }
+  },
+  {
+    "name": "Anatoly Bordyugov",
+    "photo": "avatars/19.jpg",
+    "sn": {
+      "fb": "https://www.facebook.com/anatoly.bordyugov"
+    }
+  },
+  {
+    "name": "Vagiz Nurullov",
+    "photo": "avatars/20.jpg",
+    "sn": {
+      "fb": "https://www.facebook.com/VagizAi3"
+    }
+  }
+]

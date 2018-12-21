@@ -1,0 +1,15 @@
+version: '3'
+services:
+  stq-ico-js:
+    image: "stq-ico-js"
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: stq-ico-js
+    command: ["sh", "-c", "yarn ; yarn start"]
+    working_dir: "/app"
+    volumes:
+      - ~/.ssh:/root/.ssh
+      - ..:/app  
+    ports:
+      - 10000:10000

@@ -1,0 +1,33 @@
+.button-empty
+  display: inline-block
+
+  button, a
+    padding: 5px 20px
+    font-size: 16px
+    border: 1px solid
+    border-color: #2fbafd
+    background: transparent
+    border-radius: 4px
+    cursor: pointer
+    transition: all .3s ease
+
+    &:focus
+      outline: none
+
+    &:hover
+      background: #5ac9ff
+
+  .mini
+    height: 32px
+    padding: 4px 10px 5px
+    font-size: 14px
+
+  .filled
+    background-color: #2fbafd
+
+    @media (max-width: 350px)
+      //padding: 4px 5px 5px
+      //font-size: 11px
+
+.no-margin-right
+  margin-right: 0 !important

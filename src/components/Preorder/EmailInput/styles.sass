@@ -1,0 +1,83 @@
+.input-group-custom
+  position: relative
+  max-width: 440px
+
+  button
+    &.btn-preorder
+      border: 1px solid white !important
+      cursor: pointer
+      border-top-left-radius: 0
+      border-bottom-left-radius: 0
+
+  .button-text
+    position: relative
+
+    @media (max-width: 767px)
+      font-size: 14px
+
+    @media (max-width: 500px)
+      color: transparent
+
+      &:after
+        content: '✓'
+        position: absolute
+        top: -6px
+        left: -1px
+        display: block
+        color: white
+        font-size: 24px
+
+    &.isLoading
+      opacity: 0
+
+  .spiner-block
+    position: absolute
+    top: 42px
+    right: 55px
+
+    @media (max-width: 767px)
+      right: 25px
+
+    @media (max-width: 500px)
+      right: 0px
+
+  .form-control-custom
+    //width: auto
+
+.disabled
+
+  .btn-preorder
+    position: absolute
+    right: 0
+
+    &:hover
+      //background-color: #2c2c2c !important
+
+  .is-desibled
+    opacity: 1 !important
+    cursor: default !important
+    background-color: #2eb6f7 !important
+
+    &:hover
+      background-color: #2eb6f7 !important
+
+  .is-focus-input
+    background-color: #2c2c2c !important
+
+    &:hover
+      background-color: #2c2c2c !important
+
+.error-signed-text
+  font-size: 12px
+  margin-top: 8px
+  margin-bottom: -3px
+  color: #ff0000
+
+.did-you-mean-text
+  font-size: 12px
+  margin-top: 11px
+  margin-bottom: -3px
+
+  .did-you-mean-link
+    color: #2eb6f7
+    cursor: pointer

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#2EB6F7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/static/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Storiqa</title>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PZW6NV4');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="description" content="Storiqa — a marketplace with a wide range of functions for effective sales in the world of a new digital economy" />
+    <meta name="keywords" content="" />
+    <meta name="language" content="ru" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Open Graph data -->
+    <meta property="fb:app_id" content="1902131736691605" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://token.storiqa.com" />
+
+    <meta property="og:image" content="%PUBLIC_URL%/static/media/1200x630-facebook-og-last.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta property="og:title" content="Storiqa Token sale" />
+    <meta property="og:description" content="Storiqa — a marketplace with a wide range of functions for effective sales in the world of a new digital economy" />
+    <!-- // Open Graph data -->
+
+    <!-- Start of storiqa Zendesk Widget script -->
+      <!--<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var e=this.createElement("script");n&&(this.domain=n),e.id="js-iframe-async",e.src="https://assets.zendesk.com/embeddable_framework/main.js",this.t=+new Date,this.zendeskHost="storiqa.zendesk.com",this.zEQueue=a,this.body.appendChild(e)},o.write('<body onload="document._l();">'),o.close()}();-->
+      <!--/*]]>*/</script>-->
+      <!-- End of storiqa Zendesk Widget script -->
+
+      <!--<script type="text/JavaScript">-->
+        <!--window.zESettings = {-->
+          <!--webWidget: {-->
+            <!--color: {-->
+              <!--theme: '#0da5f0'-->
+            <!--}-->
+          <!--}-->
+        <!--};-->
+
+        <!--zE(function() {-->
+          <!--zE.setLocale('en');-->
+        <!--});-->
+      <!--</script>-->
+
+    <style>
+      .alert-cookie {
+        position: relative;
+        padding: 20px;
+        color: #fff;
+        background-color: #2eb6f7;
+        z-index: 9999;
+      }
+    </style>
+
+    <script>
+      var cookie = {};
+      var labels = ['utm_campaign','clickid_exist','utm_term','utm_content','utm_medium','utm_source','utm_network','utm_adposition','utm_keyword','utm_placement','clickid','gclid'];
+      for (var i = 0; i < labels.length; i++) {
+        let param = window.location.search.match(new RegExp(labels[i]+'=([^&]*)'));
+        if (param) {
+          cookie[labels[i]] = param[1];
+        }
+      }
+      if (Object.keys(cookie).length) {
+        document.cookie = "tracking_labels="+ encodeURIComponent(JSON.stringify(cookie)) +"; domain=storiqa.com; path=/; expires=Mon, 27 Feb 2018 15:01:15 GMT";
+      }
+    </script>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('./OneSignalSDKUpdaterWorker.js').then(function(registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }).catch(function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('./OneSignalSDKWorker.js').then(function(registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }).catch(function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
+
+    <link rel="manifest" href="/manifest.json" />
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "1f932863-b44e-4583-94c8-49b764eeb130",
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZW6NV4"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <script>
+      if (!navigator.cookieEnabled) {
+        var div = document.createElement('div');
+        div.className = "alert-cookie";
+        div.innerHTML = "Please enable cookies to view this website.";
+        document.body.appendChild(div);
+      }
+    </script>
+    <div id="root" style="height: 100%"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

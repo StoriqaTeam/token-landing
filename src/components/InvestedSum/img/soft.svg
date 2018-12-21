@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="10650 -536.5 151 41.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+        opacity: 0.4;
+        stroke: #3fa9f5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <path id="Capping" class="cls-1" d="M150,35.2H133.6l-6.9,8.5-6.9-8.5H8a4.012,4.012,0,0,1-4-4V7.2a4.012,4.012,0,0,1,4-4H150a4.012,4.012,0,0,1,4,4v24A4.012,4.012,0,0,1,150,35.2Z" transform="translate(10646.5 -539.2)"/>
+</svg>

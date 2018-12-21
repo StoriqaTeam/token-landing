@@ -1,0 +1,521 @@
+.main-info-block
+  position: relative
+  background-size: contain
+  background-color: #000
+  z-index: 101
+  min-height: 100vh
+  align-items: center
+  display: flex
+
+  .voting-button-wrap
+    //max-width: 300px
+    margin-top: 33px
+
+    @media (max-width: 767px)
+      margin: 0 auto
+
+    .voting-button-text
+      font-size: 22px
+
+  .welcome-screen
+    @media (min-width: 1200px) and (max-width: 1304px)
+      transform: scale(0.9)
+      top: 4px
+      left: -19px
+      z-index: 999
+
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,0.8)
+    z-index: 9999
+    display: flex
+    align-items: center
+    font-family: 'Open_Sans_Semibold', Arial, sans-serif
+    color: white
+
+  .welcome-screen-inner
+    display: flex
+    align-items: center
+    flex-direction: column
+    flex: 1
+
+    .logo
+      transform-origin: 50% !important
+
+    .welcome-screen-title
+      font-size: 18px
+      margin-top: 10px
+    .welcome-screen-text
+      margin-top: 100px
+
+  .pulse
+    animation: pulse 2s infinite
+    width: 80%
+    background-color: #2fbafd
+    height: 45px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 8px
+    font-size: 18px
+    margin-top: 10px
+    cursor: pointer
+    color: white
+
+  .pulse:hover
+    animation: none
+
+  .pulse:visited
+    color: white
+
+  @-webkit-keyframes pulse
+    0%
+      -webkit-box-shadow: 0 0 0 0 rgba(47,186,253, 0.4)
+    70%
+        -webkit-box-shadow: 0 0 0 20px rgba(47,186,253, 0)
+    100%
+        -webkit-box-shadow: 0 0 0 0 rgba(47,186,253, 0)
+
+
+  @keyframes pulse
+    0%
+      -moz-box-shadow: 0 0 0 0 rgba(47,186,253, 0.4)
+      box-shadow: 0 0 0 0 rgba(47,186,253, 0.4)
+    70%
+        -moz-box-shadow: 0 0 0 10px rgba(47,186,253, 0)
+        box-shadow: 0 0 0 20px rgba(47,186,253, 0)
+    100%
+        -moz-box-shadow: 0 0 0 0 rgba(47,186,253, 0)
+        box-shadow: 0 0 0 0 rgba(47,186,253, 0)
+
+
+  .docs
+    color: #8a8a8a !important
+    transition: color .3s ease
+    border: 0 !important
+    font-size: 12px !important
+    float: left
+
+    @media (max-width: 767px)
+      float: none
+
+    &:hover
+      color: #fff !important
+
+      span
+        border-color: #fff
+
+    span
+      display: inline-block
+      border: 1px solid
+      border-color: #8a8a8a
+      border-radius: 5px
+      padding: 1px 6px 2px
+      font-size: 11px
+      transition: border-color .3s ease
+
+  .header-btn
+    display: block
+    margin-top: 1px
+    border: 0 !important
+    cursor: pointer
+    text-decoration: underline
+    transition: background 0.2s ease-out
+
+  .bg
+    position: absolute
+    top: 60px
+    bottom: 0
+    width: 100%
+    background-image: url('./img/stq_background.png')
+    background-repeat: no-repeat
+    background-size: contain
+    background-color: #000
+    background-position-x: 250%
+    z-index: 0
+
+    @media (max-width: 499px)
+      background-size: 200%
+      background-position-x: 50%
+
+    @media (min-width: 500px)
+      background-size: 150%
+      background-position-x: 50%
+
+    @media (min-width: 768px)
+      background-size: 150%
+      background-position-x: 50px
+
+    @media (min-width: 1024px)
+      background-size: 120%
+      background-position-x: 140px
+
+    @media (min-width: 1200px)
+      background-size: contain
+      background-position-x: 200px
+
+    @media (min-width: 1368px)
+      background-size: contain
+      background-position-x: 300px
+
+    @media (min-width: 1700px)
+      background-size: contain
+      background-position-x: 120%
+
+    @media (min-width: 2000px)
+      background-size: contain
+      background-position-x: 100%
+
+    @media (min-width: 2300px)
+      background-size: contain
+      background-position-x: 80%
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      bottom: 0
+      width: 100%
+      display: block
+      background-color: rgba(0,0,0,.7)
+      background-image: url('./img/bg.svg')
+      background-size: 5px
+      z-index: 100
+
+    @media (max-width: 1024px)
+      background-image: url('./img/stq_background_1024px.png')
+
+    @media (max-width: 768px)
+      background-image: url('./img/stq_background_768px.png')
+
+    @media (max-width: 500px)
+      background-image: url('./img/stq_background_500px.png')
+
+  .buy-tokens-btn
+    text-align: center
+    padding-bottom: 50px
+    @media (min-width: 501px)
+      display: none !important
+
+  .main-block-wrapper
+    @media (min-width: 1200px)
+      // padding-right: 60px
+    .ico-block
+      @media (max-width: 768px)
+        margin-top: 30px !important
+
+      .dead-deadline
+        color: white
+        margin-top: 40px
+        padding-top: 40px
+        border-top: 1px solid rgba(47,186,253,.3)
+
+        .giveaway-line-wrap
+          display: flex
+          align-items: center
+          border: 1px solid #2fbafd
+          padding: 2px 10px 2px 2px
+          border-radius: 7px
+
+          @media (max-width: 767px)
+            display: inline-block
+            margin: 0 auto
+            padding: 2px 3px
+
+            .countdown
+              margin: 0 auto
+
+          @media (max-width: 991px)
+            .countdown
+              font-size: 30px !important
+
+              .countdown-col + .countdown-col
+                margin-left: 15px
+
+                &:before
+                  left: -12px
+
+          .ends-text
+            margin: 0 15px 0 30px
+            font-size: 24px
+            white-space: nowrap
+
+            @media (max-width: 991px)
+              font-size: 18px
+
+            @media (max-width: 767px)
+              margin-top: 10px
+
+        .text
+          //margin-right: 30px
+          font-size: 24px
+
+          @media (max-width: 767px)
+            font-size: 20px
+
+        .giveaway-button
+          height: 60px
+          padding: 10px 30px
+          font-size: 26px
+          min-width: 320px
+
+          @media (max-width: 767px)
+            //
+
+          @media (max-width: 576px)
+            font-size: 20px
+            padding: 5px 30px
+            height: 50px
+            min-width: 260px
+
+        .try-button
+          height: 60px
+          padding: 11px 30px
+          font-size: 22px
+          margin-left: 25px
+          min-width: 320px
+
+          @media (max-width: 767px)
+            margin-left: 0
+            margin-top: 30px
+
+          @media (max-width: 576px)
+            height: 50px
+            font-size: 16px
+            min-width: 260px
+
+  .left-info-block
+    @media (min-width: 1200px)
+      // padding-left: 97px
+      padding-right: 10px
+
+    .title
+      font-size: 50px
+      line-height: 58px
+
+      @media (min-width: 768px)
+        font-family: Open_Sans_Extrabold, Arial, sans-serif
+
+      @media (max-width: 767px)
+        font-family: Open_Sans_Bold, Arial, sans-serif
+        font-size: 32px
+        line-height: 40px
+
+      .cross
+        position: relative
+        display: inline-block
+
+        .line1, .line2
+          height: 6px
+          background-color: #2FBAFD
+          position: absolute
+          top: 50%
+          left: 0
+          width: 100%
+
+        .line1
+          transform: rotate(15deg)
+        .line2
+          transform: rotate(-15deg)
+
+    .ico-text
+      font-size: 30px !important
+
+      @media (max-width: 767px)
+        display: flex
+
+    .main-info-buttons
+      width: 100%
+      font-family: "Open_Sans_Semibold", Arial, sans-serif
+      font-size: 16px
+      color: #fff
+      padding: 0 15px
+
+      .tweet
+        #twitter-widget-0
+          width: 100% !important
+
+        .tweet-wrap
+          // height: 0 !important
+          overflow: hidden
+
+          &.isTweet
+            height: auto !important
+
+      .double-block
+        margin-top: -30px
+
+        @media (max-width: 767px)
+          margin-top: 10px
+
+        .double-block-text
+          position: relative
+          top: 25px
+          font-size: 24px
+
+        img
+          display: block
+          width: 100%
+
+        .double-block-buttons
+          margin-top: 20px
+
+          .button-item
+            width: 100%
+
+            & > div
+              width: 100%
+
+              & > a
+                display: inline-block
+                width: 100%
+                padding: 10px 15px
+                font-size: 20px
+                border: 2px solid #2eb6f7
+                background-color: #2eb6f7
+
+                &:hover
+                  border: 2px solid #259dd6
+                  background-color: #259dd6
+
+                @media (max-width: 414px)
+                  font-size: 16px
+
+      .telegram
+        display: inline-block
+        white-space: nowrap
+        height: 40px
+
+        @media (max-width: 991px), (min-width: 1198px)
+          // margin-top: 7px
+
+        & > span
+          line-height: 40px
+
+    .reasons-features
+      .item
+        position: relative
+        font-size: 18px
+        font-weight: bold
+        padding-bottom: 70px
+        cursor: pointer
+        letter-spacing: 1px
+
+        @media (min-width: 768px) and (max-width: 991px)
+          font-size: 16px
+
+        @media (max-width: 767px)
+          padding-bottom: 40px
+
+        img
+          display: inline-block
+          width: 140px
+          margin-bottom: 10px
+
+        .bottom-tooltip
+          position: absolute
+          left: 0
+          right: 0
+          margin-top: 10px
+          font-weight: normal
+          font-size: 14px
+          padding: 0 15px
+
+    .tr-button
+      display: block
+      margin-top: 24px
+      width: 300px
+      height: 60px
+      padding: 0 20px
+      line-height: 60px
+      font-size: 24px
+      border-radius: 8px
+      background-color: #2fbafd
+      cursor: pointer
+      transition: all .3s ease
+
+      &:hover
+        background: #5ac9ff
+
+      @media (max-width: 400px)
+        width: 100%
+        max-width: 100%
+        min-width: auto
+
+
+    .join-airdrop-button
+      display: block
+      max-width: 350px
+      min-width: 300px
+      height: 60px
+      padding: 0 20px
+      line-height: 60px
+      font-size: 24px
+      border-radius: 8px
+      border: 1px solid #2fbafd
+      cursor: pointer
+      transition: all .3s ease
+
+      &:hover
+        background: #5ac9ff
+
+      @media (max-width: 400px)
+        width: 100%
+        max-width: 100%
+        min-width: auto
+
+    .try-demo-text
+      height: 60px
+      line-height: 60px
+      font-size: 22px
+
+      img
+        display: block
+        width: 60px
+        height: 60px
+
+      @media (max-width: 767px)
+        height: auto
+        font-size: 22px
+        line-height: 30px
+
+  .iframe-block
+    .iframe-wrap
+      position: relative
+
+    .iframe-wrap-wrap
+      position: relative
+      width: 294px
+      height: 599px
+
+      @media (max-width: 567px)
+        overflow: hidden
+
+      .iframe-wrap-wrap-wrap
+        position: relative
+        display: inline-block
+        width: 100%
+        height: 100%
+        border-radius: 50px
+        overflow: hidden
+        z-index: 10
+
+    img
+      transform-origin: 0 0
+      transform: scale(0.7)
+
+    iframe
+      border: 0
+      transform-origin: 0 0
+      transform: scale(0.7)
+      border-radius: 70px
+      width: 420px
+      height: 855px
+      overflow: hidden
+
+      @media (min-width: 1200px) and (max-width: 1304px)
+        margin-top: 60px
+        transform: scale(0.6)

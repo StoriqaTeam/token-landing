@@ -1,0 +1,334 @@
+@keyframes shadow
+  0%
+    box-shadow: 0 0 4px 0px #2FBAFD
+  50%
+    box-shadow: 0 0 9px 1px #2FBAFD
+  100%
+    box-shadow: 0 0 4px 0px #2FBAFD
+
+.infrastructure-section
+  position: relative
+  padding-top: 150px
+  padding-bottom: 150px
+  background: #151f31
+  z-index: 101
+
+  .title
+    font-size: 24px
+    line-height: 24px
+
+    span
+      font-size: 16px
+
+  .body
+    position: relative
+    margin-top: 20px
+    padding: 30px 15px
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      display: block
+      height: 8px
+      border-top: 1px solid #2FBAFD
+      border-left: 1px solid #2FBAFD
+      border-right: 1px solid #2FBAFD
+
+    &:after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      display: block
+      height: 8px
+      border-bottom: 1px solid #2FBAFD
+      border-left: 1px solid #2FBAFD
+      border-right: 1px solid #2FBAFD
+
+    .center-block
+      margin-top: 30px
+      margin-bottom: 60px
+
+      @media (max-width: 1199px) and (min-width: 991px), (max-width: 767px)
+        margin-top: 40px
+        margin-bottom: 40px
+
+    .second
+      @media (max-width: 1199px) and (min-width: 991px), (max-width: 767px)
+        margin-top: 20px
+
+    &.left
+      @media (max-width: 1199px) and (min-width: 991px), (max-width: 767px)
+        padding-left: 45px
+        padding-right: 45px
+
+  .first-lines, .second-lines, .third-lines
+    position: relative
+    z-index: 2
+
+    &:after, &:before
+      content: ''
+      position: absolute
+      display: block
+      z-index: 0
+
+  .first-lines
+    &:before
+      top: 29px
+      left: 55px
+      border-left: 1px solid #2FBAFD
+      border-bottom: 1px solid #2FBAFD
+      width: 150px
+      height: 100px
+
+      @media (max-width: 1199px) and (min-width: 991px), (max-width: 767px)
+        top: 32px
+        left: -5px
+        border-top: 1px solid #2FBAFD
+        height: 192px
+
+    &:after
+      top: 29px
+      right: 55px
+      border-right: 1px solid #2FBAFD
+      border-bottom: 1px solid #2FBAFD
+      width: 150px
+      height: 100px
+
+      @media (max-width: 1199px) and (min-width: 991px), (max-width: 767px)
+        top: 118px
+        right: -5px
+        border-top: 1px solid #2FBAFD
+        height: 107px
+
+  .second-lines
+    &:before
+      bottom: -30px
+      left: 50px
+      border-left: 1px solid #2FBAFD
+      width: 1px
+      height: 50px
+
+      @media (max-width: 1199px) and (min-width: 991px), (max-width: 767px)
+        bottom: -20px
+
+    &:after
+      bottom: -30px
+      right: 50px
+      border-right: 1px solid #2FBAFD
+      width: 1px
+      height: 50px
+
+      @media (max-width: 1199px) and (min-width: 991px), (max-width: 767px)
+        bottom: -20px
+
+  .third-lines
+    &:before
+      top: -31px
+      left: 55px
+      border-left: 1px solid #2FBAFD
+      border-top: 1px solid #2FBAFD
+      width: 131px
+      height: 50px
+
+      @media (max-width: 991px) and (min-width: 767px)
+        width: 168px
+
+      @media (max-width: 1199px) and (min-width: 991px), (max-width: 767px)
+        top: -20px
+        left: -5px
+        border-bottom: 1px solid #2FBAFD
+        width: 56px
+        height: 53px
+
+    &:after
+      top: -31px
+      right: 55px
+      border-right: 1px solid #2FBAFD
+      border-top: 1px solid #2FBAFD
+      width: 131px
+      height: 50px
+
+      @media (max-width: 991px) and (min-width: 767px)
+        width: 168px
+
+      @media (max-width: 1199px) and (min-width: 991px), (max-width: 767px)
+        top: -20px
+        right: -5px
+        border-bottom: 1px solid #2FBAFD
+        width: 56px
+        height: 138px
+
+  .footnote
+    margin-top: 10px
+    font-size: 10px
+    color: #919191
+
+  .small-block
+    position: relative
+    padding: 20px
+    background-color: #19232E
+    border: 1px solid rgba(201,201,201,.26)
+    border-radius: 8px
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.33)
+    z-index: 1
+
+    .left
+      width: calc(100% - 70px)
+      padding-right: 20px
+      border-right: 1px solid rgba(201,201,201,.26)
+      font-size: 16px
+
+      @media (max-width: 360px)
+        font-size: 12px
+        width: calc(100% - 60px)
+
+    .right
+      position: relative
+      width: 70px
+      margin-top: 5px
+      padding-left: 25px
+      font-size: 10px
+      color: #919191
+
+      @media (max-width: 360px)
+        width: 60px
+
+      &:before
+        content: ''
+        position: absolute
+        top: 3px
+        left: 11px
+        display: block
+        width: 8px
+        height: 8px
+        border-radius: 50%
+
+      &.green
+        &:before
+          background-color: #70C94F
+
+      &.blue
+        &:before
+          background-color: #2FBAFD
+          animation: shadow 1.5s linear infinite
+
+      &.grey
+        &:before
+          background-color: #6A6A6A
+
+  .caption
+    position: relative
+    display: inline-block
+    // margin-top: 20px
+    margin-bottom: 20px
+    z-index: 1
+
+    .left
+      width: calc(100% - 85px)
+      padding-right: 20px
+      border-right: 1px solid rgba(201,201,201,.26)
+      font-size: 18px
+      white-space: nowrap
+
+    .right
+      position: relative
+      width: 85px
+      margin-top: 5px
+      padding-left: 25px
+      font-size: 10px
+      color: #919191
+
+      &:before
+        content: ''
+        position: absolute
+        top: 3px
+        left: 11px
+        display: block
+        width: 8px
+        height: 8px
+        border-radius: 50%
+
+      &.green
+        &:before
+          background-color: #70C94F
+
+      &.blue
+        &:before
+          background-color: #2FBAFD
+          animation: shadow 1.5s linear infinite
+
+      &.grey
+        &:before
+          background-color: #6A6A6A
+
+  .img-theme
+    padding-left: 0
+    padding-right: 0
+
+    @media (max-width: 991px)
+      margin-top: 20px
+      padding-left: 15px
+      padding-right: 15px
+
+  .block
+    padding: 20px
+    background-color: #19232E
+    border: 1px solid rgba(201,201,201,.26)
+    border-radius: 8px
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.33)
+
+    @media (max-width: 360px)
+      font-size: 12px
+
+    &.top-block
+      @media (max-width: 991px)
+        width: 50%
+        margin-right: 20px
+
+    &.bottom-block
+      margin-top: 20px
+
+      @media (max-width: 991px)
+        width: 50%
+        margin-top: 0
+
+    &.right-block
+      & > div
+        display: inline-block
+        width: 50%
+
+        img
+          display: block
+          width: 100%
+
+      @media (max-width: 991px)
+        height: 150px
+        margin: 0 150px
+
+        img
+          width: auto
+          height: 100px
+
+      @media (max-width: 767px)
+        margin: 0 auto
+
+  .footnote-right
+    width: 60%
+    padding-right: 20px
+    vertical-align: top
+  
+  .additionally
+    width: 40%
+    vertical-align: top
+    margin-top: 10px
+    font-size: 12px
+
+    img
+      display: inline-block
+      height: 28px
+      margin-bottom: 10px

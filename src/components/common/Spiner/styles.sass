@@ -1,0 +1,39 @@
+@keyframes rotate
+  0%
+    transform: rotateZ(-360deg)
+
+  100%
+    transform: rotateZ(0deg)
+
+.spiner
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-top: -36px
+  margin-left: -36px
+  width: 72px
+  height: 72px
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 72px
+    height: 72px
+    border-radius: 50%
+    border: 1px solid
+    border-color: #00aef4 #00aef4 transparent transparent
+    animation: rotate .6s linear infinite
+
+  &.small
+    width: 25px
+    height: 25px
+
+    &:after
+      width: 25px
+      height: 25px
+
+  &.white
+    &:after
+      border-color: #fff #fff transparent transparent

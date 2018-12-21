@@ -1,0 +1,17 @@
+export {default as MainInfoSection} from './MainInfoSection';
+export {default as DemandSection} from './DemandSection';
+export {default as TeamSection} from './TeamSection';
+export {default as MediaSection} from './MediaSection';
+export {default as WhyBlockhainSection} from './WhyBlockhainSection';
+export {default as RoadmapSection} from './RoadmapSection';
+export {default as NewRoadmapSection} from './NewRoadmapSection';
+export {default as MarketSection} from './MarketSection';
+export {default as WaysSection} from './WaysSection';
+export {default as InWorkSection} from './InWorkSection';
+export {default as PartnersSection} from './PartnersSection';
+export {default as SmartSection} from './SmartSection';
+export {default as SpaceSection} from './SpaceSection';
+export {default as PresentSection} from './PresentSection';
+export {default as CoreSection} from './CoreSection';
+export {default as InfrastructureSection} from './InfrastructureSection';
+export {default as NewsSection} from './NewsSection';

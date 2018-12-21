@@ -1,0 +1,160 @@
+.collect-finished
+  position: relative
+  width: 100%
+  // min-height: 250px
+  margin-top: 30px
+
+  @media (max-width: 1199px) and (min-width: 768px)
+    margin: 70px 0 0 50px
+
+  &.collect-finished-footer
+    margin: 0
+
+    @media (max-width: 576px)
+      margin: 0 auto
+      max-width: 320px
+
+  .will-be-text
+    color: #fff
+
+  .thermometer
+    position: relative
+    width: 100%
+    height: 28px
+    padding: 2px
+    border: 2px solid #2eb6f7
+    border-radius: 6px
+
+    .right-hint
+      position: absolute
+      top: -35px
+      right: 0
+      color: #c7c7c7
+
+    .hard-cap-top-hint
+      position: absolute
+      top: -35px
+      left: 0
+      color: #c7c7c7
+
+    .thermometer-item
+      position: relative
+      display: inline-block
+
+      &.left
+        width: 100%
+        height: 20px
+        border-right: 0
+        border-radius: 3px
+        background: linear-gradient(to left top, rgba(68, 193, 187, 0) 53.9%, #44c1fd 51%, #44c1fd 78%, rgba(68, 193, 187, 0) 70%), linear-gradient(to left top, #44c1fd 28%, rgba(189, 107, 127, 0) 30%)
+        background-size: 2em 6em
+        background-color: #2fbafd
+
+  .rialto-button
+    width: 50%
+
+    div, div a, div a img
+      width: 100%
+
+    &.double
+      .button
+        @media (pointer:coarse)
+          display: none
+
+      .buttons
+        position: relative
+        display: none
+
+        @media (pointer:coarse)
+          display: block
+
+          & > div
+            display: inline-block
+            width: calc(50% - 0.25rem)
+
+        img
+          display: inline-block
+
+          @media (max-width: 1199px) and (min-width: 991px)
+            margin-top: 6px
+
+          @media (max-width: 374px)
+            margin-top: -5px
+
+        a
+          @media (max-width: 374px)
+            height: 53px
+
+        span
+          position: relative
+          display: inline-block
+          margin-left: -6px
+          font-size: 11px
+
+          @media (max-width: 1199px) and (min-width: 991px)
+            margin: 10px 0 9px
+            font-size: 14px
+
+          @media (max-width: 374px)
+            top: -8px
+            margin: 0 0 0 -9px
+            font-size: 11px
+
+      &:hover
+        .button
+          display: none
+
+        .buttons
+          display: block
+
+          & > div
+            display: inline-block
+            width: calc(50% - 0.25rem)
+
+          a
+            @media (min-width: 1199px)
+              height: 55px
+              line-height: 20px
+
+          span
+            @media (min-width: 1199px)
+              margin: -1px 0 0 -9px
+
+      &.double-footer
+        .buttons
+
+          a
+            height: 97px
+
+            @media (max-width: 576px)
+              height: 59px
+
+            @media (max-width: 321px)
+              height: 52px
+
+          img
+            display: inline-block
+            margin-top: 11px
+
+            @media (max-width: 576px)
+              margin: 0
+
+          span
+            margin: 10px 0 11px
+            font-size: 14px
+
+            @media (max-width: 576px)
+              margin: -1px 0 0 -6px
+              font-size: 11px
+
+            @media (max-width: 321px)
+              margin: -1px 0 0 -9px
+              font-size: 11px
+
+
+
+
+
+
+
+

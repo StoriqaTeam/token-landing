@@ -1,0 +1,1985 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.css'
+@import 'components/sections/MainInfoSection/styles.sass'
+@import 'components/sections/DemandSection/styles.sass'
+@import 'components/sections/WhyBlockhainSection/styles.sass'
+@import 'components/sections/RoadmapSection/styles.sass'
+@import 'components/sections/NewRoadmapSection/styles.sass'
+@import 'components/sections/MarketSection/styles.sass'
+@import 'components/sections/WaysSection/styles.sass'
+@import 'components/sections/InWorkSection/styles.sass'
+@import 'components/sections/PartnersSection/styles.sass'
+@import 'components/sections/SmartSection/styles.sass'
+@import 'components/sections/SpaceSection/styles.sass'
+@import 'components/sections/PresentSection/styles.sass'
+@import 'components/sections/CoreSection/styles.sass'
+@import 'components/sections/InfrastructureSection/styles.sass'
+@import 'components/sections/NewsSection/styles.sass'
+
+@font-face
+  font-family: 'HelveticaNeue'
+  src: url('./fonts/helvetica_neue_ttf_font/HelveticaNeue.ttf')
+  font-style: normal
+  font-weight: normal
+
+@font-face
+  font-family: 'Open_Sans'
+  src: url('./fonts/Open_Sans/OpenSans-Regular.ttf')
+  font-style: normal
+  font-weight: normal
+
+@font-face
+  font-family: 'Open_Sans_Bold'
+  src: url('./fonts/Open_Sans/OpenSans-Bold.ttf')
+  font-style: normal
+  font-weight: bold
+
+@font-face
+  font-family: 'Open_Sans_Semibold'
+  src: url('./fonts/Open_Sans/OpenSans-SemiBold.ttf')
+  font-style: normal
+  font-weight: bold
+
+@font-face
+  font-family: 'Open_Sans_Extrabold'
+  src: url('./fonts/Open_Sans/OpenSans-ExtraBold.ttf')
+  font-style: normal
+  font-weight: bold
+
+@mixin OpenSans
+  font-family: 'Open_Sans', Arial, sans-serif
+
+@mixin OpenSansBold
+  font-family: 'Open_Sans_Bold', Arial, sans-serif
+
+@mixin OpenSansSemibold
+  font-family: 'Open_Sans_Semibold', Arial, sans-serif
+
+@mixin OpenSansExtrabold
+  font-family: 'Open_Sans_Extrabold', Arial, sans-serif
+
+.open-sans
+  @include OpenSans
+
+.open-sans-bold
+  @include OpenSansBold
+
+.open-sans-semibold
+  @include OpenSansSemibold
+
+.open-sans-extrabold
+  @include OpenSansExtrabold
+
+.container-wide
+  @media (min-width: 1305px)
+    width: 1304px
+    max-width: 100%
+
+.color-blue
+  color: #2eb6f7
+
+.shadow
+  background: #fff
+  border: 1px solid rgba(214, 214, 214, 0.59)
+  box-shadow: 0 8px 23px 0 rgba(0, 0, 0, 0.07)
+  border-radius: 5px
+
+.pub_300x250, .pub_300x250m, .pub_728x90, .text-ad, .textAd, .text_ad, .text_ads, .text-ads, .text-ad-links
+  display: none
+
+html
+  height: 100%
+
+body
+  box-sizing: border-box
+  font-family: 'Open_Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-size: 16px
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  height: 100%
+
+div[data-reactroot]
+  height: 100%
+
+*,
+*::before,
+*::after
+  box-sizing: inherit
+
+h1, .h1
+  font-size: 32px
+  line-height: 48px
+  font-weight: bold
+
+.section-earth, .section-hero, .section-roadmap
+  .lead
+    min-height: 60px
+    font-size: 16px
+
+  .timeline-container
+    min-height: 385px
+
+h2, .h2
+  font-size: 18px
+  line-height: 22px
+  font-weight: bold
+
+.header
+  position: fixed !important
+  top: 0
+  width: 100%
+  height: 80px
+  background-color: #0e0f15
+
+  .header-logo
+    // @media (max-width: 1024px)
+    //   max-width: 266px !important
+
+  &.black
+    background-color: #000
+
+  a:link, a:visited, a:hover
+    color: #fff
+
+  .socials-block
+    a
+      font-size: 20px
+
+  .top-block
+    background: #000
+    font-size: 12px
+
+    .header-wrap
+      @media (min-width: 1305px)
+        width: 100%
+        max-width: 1500px
+
+      @media (max-width: 767px)
+        width: 100%
+
+      @media (max-width: 1199px) and (min-width: 992px)
+        display: block !important
+
+      .menu-block
+        @media (max-width: 1199px) and (min-width: 992px)
+          margin-top: 17px
+
+      .try-demo-button
+        a
+          @media (max-width: 450px)
+            font-size: 11px
+            padding: 5px 7px
+            height: auto
+
+    .header-hidden
+      margin-left: 30px !important
+
+      @media (max-width: 1200px)
+        width: 65px
+
+      @media (max-width: 599px)
+        display: none
+
+      @media (max-width: 1304px)
+        margin-left: 14px !important
+
+    .marketcap
+      //
+
+    .price
+      margin-left: 20px
+      color: white
+
+      .color-text
+        &.color-text-green
+          color: #90D017
+
+        &.color-text-red
+          color: #D0172C
+
+        .arrow
+          position: relative
+          top: -1px
+          display: inline-block
+          width: 8px
+          margin-left: 1px
+
+    .rialto-button
+      margin-left: 30px
+
+      @media (max-width: 1304px)
+        margin-left: 14px
+
+      @media (max-width: 350px)
+        margin-left: 8px
+
+    .user-button
+      width: 32px
+
+      @media (max-width: 1304px)
+        margin-left: 20px
+
+    .faq-link
+      color: #ccc
+      cursor: pointer
+
+      &:hover
+        color: #fff
+
+    .tokens-button
+      margin-left: 20px
+      b
+        white-space: nowrap
+        background: #2eb6f7
+        padding: 6px 22px
+        border-radius: 8px
+
+        &:hover
+          background: #259dd6
+
+    .demo-button
+      b
+        white-space: nowrap
+        border: 1px solid
+        border-color: #2eb6f7
+        padding: 3px 10px 5px
+        border-radius: 3px
+
+        &:hover
+          border-color: #259dd6
+
+    .logo
+      height: 40px
+      width: auto
+      margin-right: 30px
+      cursor: pointer
+
+      @media (max-width: 767px)
+        height: 35px
+
+      @media (max-width: 575px)
+        position: relative
+        left: -7px
+
+      @media (max-width: 400px)
+        height: 27px
+
+      //@media (max-width: 400px)
+      //  height: 30px
+
+    .container
+      padding-top: 20px
+      padding-bottom: 20px
+
+    .scroll-link
+      color: #ccc
+      font-size: 16px
+      cursor: pointer
+
+      &:hover
+        color: #2eb6f7
+
+      .active
+        color: #2eb6f7
+
+    .telegram-icon
+      width: 40px
+      height: 40px
+
+.home
+  overflow: hidden
+
+  .telega
+    //
+
+  .header
+    background-color: transparent
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    z-index: 999
+
+  .header-popup
+    padding: 20px 50px 40px
+    color: white
+
+    .desc
+      margin-bottom: 35px
+
+    .item
+      display: flex
+      //align-items: center
+      margin-top: 7px
+
+      @media (max-width: 767px)
+        flex-direction: column
+
+      img
+        //margin-bottom: -10px
+
+      img.no-margin
+        //margin-bottom: 0 !important
+
+      & > div
+        & > div
+          margin-top: 15px
+          margin-right: 15px
+
+    img
+      display: block
+      width: 125px
+      height: 41px
+      margin-right: 10px
+      margin-top: 11px
+
+    .exchange-tokenomy-button
+      button
+        //
+
+  .mvp-popup
+    padding: 20px 50px 40px
+
+    @media (max-width: 767px)
+      padding: 15px 30px 30px
+
+    @media (max-width: 575px)
+      padding: 40px 20px 30px
+
+    li
+      margin-bottom: 10px
+      margin-left: -10px
+
+    .title
+      font-size: 30px
+      line-height: 50px
+      padding: 0 40px
+      text-align: center
+      margin-top: 20px
+
+      & + .title
+        margin-top: 7px
+
+      @media (max-width: 767px)
+        font-size: 26px
+        padding: 0
+        line-height: 37px
+
+      @media (max-width: 575px)
+        font-size: 20px
+        line-height: 28px
+
+    .desc
+      font-size: 22px
+      margin-top: 20px
+
+      @media (max-width: 767px)
+        font-size: 20px
+        text-align: center
+
+      @media (max-width: 575px)
+        font-size: 16px
+
+    .text
+      font-size: 18px
+      margin-top: 20px
+
+      @media (max-width: 767px)
+        font-size: 16px
+        margin-top: 30px
+
+      @media (max-width: 575px)
+        font-size: 14px
+
+    .note
+      font-size: 16px
+
+      @media (max-width: 767px)
+        font-size: 14px
+
+      @media (max-width: 575px)
+        font-size: 12px
+
+    .rules-item
+      display: block
+      padding-left: 28px
+      text-indent: -28px
+
+      & + .rules-item
+        margin-top: 10px
+
+      @media (max-width: 767px)
+        padding-left: 23px
+        text-indent: -23px
+
+      @media (max-width: 575px)
+        padding-left: 18px
+        text-indent: -18px
+
+    .exchange-button,
+    .iphone-win-button
+      display: block
+      text-align: center
+      width: 100%
+      max-width: 300px
+      height: 60px
+      margin-top: 20px
+      padding: 0 20px
+      line-height: 60px
+      font-size: 24px
+      border-radius: 8px
+      background-color: #2FBAFD
+      cursor: pointer
+      transition: all .3s ease
+
+      &:hover
+        background-color: #5ac9ff
+
+      @media (max-width: 767px)
+        margin-top: 30px
+        height: 50px
+        line-height: 50px
+        font-size: 18px
+
+  .join-popup
+    padding: 20px 50px 40px
+
+    @media (max-width: 767px)
+      padding: 15px 30px 30px
+
+    @media (max-width: 575px)
+      padding: 40px 20px 30px
+
+    .text
+      font-size: 18px
+      margin-top: 20px
+
+      @media (max-width: 767px)
+        font-size: 16px
+
+      @media (max-width: 575px)
+        font-size: 14px
+        margin-top: -6px
+
+  //.mvp-alert
+  //  position: fixed
+  //  top: 100px
+  //  right: 20px
+  //  margin-left: 20px
+  //  padding: 20px 20px 30px
+  //  border: 1px solid white
+  //  background: #19232E
+  //  opacity: 0
+  //  border-radius: 4px
+  //  overflow: hidden
+  //  z-index: 1000
+  //  transform: translateY(-30px)
+  //  transition: all .3s ease
+  //
+  //  .title
+  //    font-size: 20px
+  //
+  //    //@media (max-width: 767px)
+  //    //  font-size: 30px
+  //    //
+  //    //@media (max-width: 575px)
+  //    //  font-size: 24px
+  //
+  //  .text
+  //    font-size: 18px
+  //    margin-top: 10px
+  //
+  //    //@media (max-width: 767px)
+  //    //  font-size: 20px
+  //    //  margin-top: 30px
+  //    //
+  //    //@media (max-width: 575px)
+  //    //  font-size: 18px
+  //
+  //  .try-demo-button
+  //    display: block
+  //    max-width: 260px
+  //    height: 40px
+  //    margin-top: 20px
+  //    padding: 0 20px
+  //    line-height: 40px
+  //    font-size: 20px
+  //    border-radius: 4px
+  //    background-color: #2FBAFD
+  //    cursor: pointer
+  //    transition: all .3s ease
+  //
+  //    &:hover
+  //      background-color: #5ac9ff
+  //
+  //    @media (max-width: 767px)
+  //      margin-top: 30px
+  //      height: 50px
+  //      line-height: 50px
+  //      font-size: 15px
+  //
+  //  .close
+  //    position: absolute
+  //    top: 7px
+  //    right: 10px
+  //    min-width: 12px !important
+  //    width: 10px
+  //    height: 10px
+  //    font-size: 50px
+  //    cursor: pointer
+  //    outline: none
+  //    padding: 0
+  //    background: transparent
+  //    border: 0
+  //    font-weight: bold
+  //    line-height: 10px
+  //    color: #2cb5f7
+  //    text-shadow: none
+  //    opacity: .6
+  //    z-index: 10
+  //    border: 0
+  //
+  //    &:hover
+  //      color: #0d82bb
+  //      text-decoration: none
+  //      opacity: .75
+  //
+  //  &.mvp-alert-show
+  //    transform: translateY(0)
+  //    opacity: 1
+
+.home-subscribe
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
+  height: 65px
+  // padding-top: 7px
+  color: #fff
+  opacity: 1
+  z-index: 999
+  transition: opacity .3s ease
+  //background-color: #000
+
+  @media (max-width: 767px)
+    height: 80px
+
+  .up-icon-block
+    position: absolute
+    width: 100%
+
+    .telegram-hover
+      transition: all .3s ease
+
+      &:before
+        content: 'Join our Telegram'
+        position: absolute
+        top: 4px
+        bottom: 4px
+        left: 31px
+        display: block
+        width: 210px
+        background-color: white
+        z-index: -1
+        opacity: 0
+        transition: all .3s ease
+        padding-left: 50px
+        padding-top: 15px
+
+      &:hover
+        transform: translateX(-150px)
+
+        &:before
+          opacity: 1
+
+      @media (pointer: coarse)
+        &:hover
+          transform: translateX(0)
+
+          &:before
+            opacity: 0
+
+    .telegram
+      position: absolute
+      bottom: -13px
+      right: 20px
+      cursor: pointer
+
+      @media (max-width: 991px)
+        bottom: -17px
+        right: 15px
+
+      @media (max-width: 767px)
+        bottom: -20px
+
+      @media (max-width: 500px)
+        bottom: -25px
+        right: 15px
+
+        img
+          width: 45px
+          height: 45px
+
+      &:after
+        content: '2'
+        display: block
+        width: 25px
+        height: 25px
+        background: red
+        font-weight: bold
+        font-size: 14px
+        text-align: center
+        line-height: 25px
+        border-radius: 50%
+        color: white
+        position: absolute
+        top: -4px
+        left: -4px
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .33)
+
+    .up-icon
+      position: absolute
+      bottom: -25px
+      left: 15px
+      //opacity: .5
+      cursor: pointer
+      width: 40px
+      height: 40px
+      transition: all .3s ease
+      background-color: rgba(255,255,255,.2)
+      border-radius: 50%
+
+      &:hover
+        opacity: 1
+        background-color: rgba(255,255,255,.25)
+
+  .telegram-icon
+    width: 65px
+    height: 65px
+
+  .telegram
+    display: inline-block
+    margin-bottom: 6px
+    display: inline-block
+
+  .preorder, .telegram-block
+    @media (max-width: 767px)
+      display: none
+
+.logo-storiqa, .logo-storiqa-small
+  display: inline-block
+  width: 100%
+  height: auto
+  margin: 0
+  position: relative
+
+.logo-storiqa img
+  width: 100%
+  max-width: 255px
+  height: auto
+
+.header-wrap
+  color: #ffffff
+
+a:link, a:visited
+  text-decoration: none
+  color: #2eb6f7
+
+a:hover
+  text-decoration: none
+  color: #2eb6f7
+
+.btn-primary
+  &.blue
+    color: #fff
+    background: #2eb6f7
+    border: 1px solid #2eb6f7
+
+    &:hover
+      background: #259dd6
+
+  &.red
+    color: #fff
+    background: linear-gradient(-180deg, #dc6c65 0%, #d8261c 96%)
+    border: 1px solid #881610
+    box-shadow: none
+
+    &:hover
+      background: linear-gradient(-180deg, #d85750 0%, #ca231a 96%)
+
+.form-control
+  border-color: #2eb6f7
+
+input.error, .error input
+  //border: 1px solid red !important
+
+.email-message, .phone-message
+  margin: 14px 0 23px 0
+
+  span
+    white-space: nowrap
+
+.subscribe .input-group .btn
+  &.blue
+    min-width: 185px
+    cursor: pointer
+
+.react-tel-input
+  width: 100% !important
+.mvp-popup
+  .flag-dropdown
+    background: none !important
+    border: 0 !important
+
+  .selected-flag
+    background: none !important
+    height: 37px !important
+    position: absolute !important
+    top: 5px
+
+  .country-list
+    top: 47px !important
+    left: 1px !important
+    width: 310px !important
+    border: 0 !important
+    border-radius: 0 !important
+
+.section-hero
+  padding-top: 90px
+  padding-bottom: 70px
+  padding-left: 0 !important
+  padding-right: 0 !important
+
+  .reasons
+    img
+      height: 41px
+
+    .examples
+      & > div
+        position: relative
+        display: block
+        margin-top: 10px
+        padding-left: 15px
+
+        &:before
+          content: '•'
+          position: absolute
+          top: 0
+          left: 0
+          color: #2eb6f7
+
+  .main-info-buttons
+    a:not(.telegram)
+      color: #fff
+      border: 1px solid #2eb6f7
+      font-size: 16px
+
+    a.telegram
+      position: relative
+      border: none
+      text-decoration: underline
+      color: #fff
+
+      @media (max-width: 1304px) and (min-width: 1199px), (max-width: 991px) and (min-width: 768px)
+        display: block
+        padding-left: 45px
+        text-align: left
+
+      img
+        height: 40px
+        width: 40px
+
+        @media (max-width: 1304px) and (min-width: 1199px), (max-width: 991px) and (min-width: 768px)
+          position: absolute
+          top: 50%
+          margin-top: -16px
+          left: 0
+
+      span
+        display: inline-block
+        margin-left: 12px
+
+        @media (max-width: 1304px) and (min-width: 1199px), (max-width: 991px) and (min-width: 768px)
+          margin: 0
+
+
+  .description
+    text-align: left
+    border-radius: 5px
+    color: #fff
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    background: rgba(198, 198, 198, 0.25)
+
+  .logo
+    display: inline-block
+    width: 240px
+
+    @media (max-width: 414px)
+      width: 240px
+
+  @media (max-width: 768px)
+    padding-top: 100px
+
+  .line
+    height: 1px
+    max-width: 550px
+    margin: 0 auto
+    border-bottom: 1px solid rgba(255,255,255,.5)
+
+  .h1
+    font-size: 34px
+    line-height: 38px
+
+    @media (max-width: 1199px)
+      font-size: 30px
+
+    @media (max-width: 991px)
+      font-size: 26px
+
+  .sticky-bottom
+    position: relative
+    top: 1px
+
+  .h1
+    @media (max-width: 767px)
+      font-size: 24px !important
+      line-height: 30px
+
+  .cta-button
+    a
+      padding: 0.75rem 3.5rem
+
+  &.mbg-en
+    background: url('./img/mbg-en.png') no-repeat
+
+  &.mbg-ru
+    background: url('./img/mbg-ru.jpg') no-repeat
+
+  &.mbg-fr
+    background: url('./img/mbg-fr.jpg') no-repeat
+
+  &.mbg-cn
+    background: url('./img/mbg-cn.jpg') no-repeat
+
+  &.mbg-es
+    background: url('./img/mbg-es.jpg') no-repeat
+
+  &.mbg-de
+    background: url('./img/mbg-de.jpg') no-repeat
+
+  &.mbg
+    background-size: cover
+
+  .ico-block
+    padding: 15px
+    width: 100%
+
+    .token-live-text
+      font-size: 34px
+
+    .ico-text
+      font-size: 18px
+
+      @media (max-width: 1199px)
+        font-size: 16px
+
+    .buttons
+      .btn
+        height: 50px
+
+      .tokens-button
+        min-width: 200px
+        font-size: 16px
+
+
+      .demo-button
+        min-width: 200px
+        background: none
+        border: 2px solid #259dd6
+
+        &:hover
+          background: #259dd6
+          border: 2px solid #259dd6
+
+      .tel-button
+        background: none
+        padding: 0
+        width: 50px
+        border: 0
+        opacity: 1
+
+        img
+          position: relative
+          top: 10px
+          width: 40px
+
+        &:hover
+          opacity: .8
+
+      .right-block
+        position: relative
+
+.pre-event-block
+  border: 1px solid rgba(255,255,255,.5)
+  display: table
+  max-width: 550px
+  margin: 0 auto
+
+  .youtube
+    .h2
+      font-size: 22px
+      font-weight: normal
+      line-height: 33px
+
+.buy-button-block
+
+  h3
+    line-height: 34px
+
+    @media (max-width: 767px)
+      font-size: 22px !important
+      line-height: 30px
+
+    .bonus
+      color: #fff
+
+      div
+        padding: 10px
+        font-size: 20px
+
+    .currency-icons
+      img
+        width: 30px
+        height: 30px
+
+  .blur
+    position: relative
+    border-left: 1px solid
+    border-color: #2eb6f7
+    width: 50%
+    margin-right: 10px
+    background: rgba(0,0,0,.4)
+
+    & + .blur
+      margin-left: 10px
+      margin-right: 0
+
+    .links
+      font-size: 14px
+
+      a:hover
+        color: #259dd6
+
+    @media (max-width: 767px)
+      margin: 0
+      width: 100%
+
+      & + .blur
+        margin-left: 0
+        margin-top: 20px
+
+.infoboard
+  margin: 0 auto
+
+  .invested-sum
+    font-size: 38px
+    font-weight: bold
+    white-space: nowrap
+
+  .shares-issued
+    font-size: 25px
+    font-weight: bold
+
+  .line-right
+    border-right: 1px solid #fff
+
+  .line-bottom
+    border-bottom: 1px solid #fff
+
+.section-earth
+  position: relative
+  margin-top: 100px
+  padding-top: 100px
+  padding-bottom: 100px
+  color: #fff
+  z-index: 1
+
+  .bg
+    position: absolute
+    top: 0
+    bottom: 0
+    width: 100%
+    background-image: url('./img/stq_background.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-color: #000
+    background-position-x: center
+    transform: rotate(180deg)
+    z-index: 0
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      bottom: 0
+      width: 100%
+      display: block
+      background-color: rgba(0,0,0,.7)
+      background-image: url('./img/bg.svg')
+      background-size: 5px
+      z-index: 100
+
+    @media (max-width: 1024px)
+      background-image: url('./img/stq_background_1024px.png')
+
+    @media (max-width: 768px)
+      background-image: url('./img/stq_background_768px.png')
+      background-size: 250%
+
+    @media (max-width: 500px)
+      background-image: url('./img/stq_background_500px.png')
+
+  h1
+    color: #ffffff
+
+  .container
+    z-index: 10
+
+  .clarification
+    p
+      text-indent: -10px
+
+      &:before
+        content: '✓'
+        display: inline-block
+        width: 10px
+        color: #2eb6f7
+
+  .description
+    max-width: 700px
+    margin: 0 auto
+
+.section-blockchain
+  padding-top: 100px
+  padding-bottom: 100px
+  position: relative
+  z-index: 1
+
+  .description
+    max-width: 700px
+    margin: 0 auto
+
+  .effect1
+    background: #e8e8e8
+    margin: 40px auto
+    position: relative
+    // border-radius:  10px / 100px
+
+    &:before, &:after
+      z-index: -1
+      position: absolute
+      content: ''
+      bottom: 15px
+      left: 10px
+      width: 50%
+      top: 80%
+      max-width: 300px
+      background: #777
+      box-shadow: 0 15px 10px #777
+      transform: rotate(-3deg)
+
+    &:after
+      right: 10px
+      left: auto
+      transform: rotate(3deg)
+
+  .effect2
+    background: #FFF
+    margin: 40px auto
+
+    position: relative
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
+
+    &:before, &:after
+      content: ''
+      position: absolute
+      z-index: -1
+      box-shadow: 0 0 20px rgba(0,0,0,0.8)
+      top: 0
+      bottom: 0
+      left: 10px
+      right: 10px
+      border-radius: 100px / 10px
+
+    &:after
+      right: 10px
+      left: auto
+      transform: skew(8deg) rotate(3deg)
+
+  .effect3
+    background: #FFF
+    margin: 40px auto
+
+    position: relative
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
+
+    &:before, &:after
+      content: ''
+      position: absolute
+      z-index: -1
+      -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8)
+      -moz-box-shadow: 0 0 20px rgba(0,0,0,0.8)
+      box-shadow: 0 0 20px rgba(0,0,0,0.8)
+      top: 10px
+      bottom: 10px
+      left: 0
+      right: 0
+      border-radius: 100px / 10px
+
+    &:after
+      right: 10px
+      left: auto
+      transform: skew(8deg) rotate(3deg)
+
+  .effect4
+    background: #e8e8e8
+    margin: 40px auto
+
+    box-shadow: 0 10px 6px -6px #777
+
+  .effect5
+    background: #fff
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1)
+
+  .icon
+    height: 90px
+
+.timeline-container
+  scroll-behavior: smooth
+  overflow-x: auto
+  position: relative
+  padding-left: 20px
+
+.timeline
+  color: #000
+  position: relative
+
+.line-timeline
+  position: relative
+  display: block
+  width: 100%
+  height: 14px
+  top: 48px
+  margin-bottom: -5px
+  background: #2eb6f7
+  background-size: auto 100%
+  border-top-left-radius: 7px
+  border-bottom-left-radius: 7px
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    right: -14px
+    border: 7px solid transparent
+    border-left: 7px solid #2eb6f7
+
+.timeline-container-new
+  overflow: hidden !important
+
+  .bullet
+    position: absolute
+    left: -6px
+    width: 20px !important
+    height: 20px !important
+
+  .line-timeline-new
+    top: 15px
+    bottom: 50px
+    display: block
+    width: 8px
+    position: absolute
+    background: #2eb6f7 url('./img/timline-pointer-bottom.png') no-repeat 0 100%
+    background-size: 100% auto
+
+  .timeline
+    position: relative
+    top: 10px
+    width: auto
+    color: #ffffff
+
+    .period
+      margin-bottom: 10px
+
+  .period-item
+    margin-left: 100px
+
+    + .period-item
+      margin-top: 30px
+
+  .spoiler
+    text-align: center
+    border-left: 8px solid #2eb6f7
+
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      display: block
+      width: 8px
+      height: 8px
+      background: url('./img/timline-pointer-bottom.png') no-repeat
+      background-size: 100%
+
+  .add-btn
+    display: inline-block
+    cursor: pointer
+    font-size: 19px
+    font-weight: bold
+    border: 1px solid rgba(255, 255, 255, .6)
+    border-radius: 3px
+    padding: 5px 10px
+    line-height: 1.7
+    margin: 30px 0 50px
+
+    *
+      vertical-align: middle
+
+    img
+      margin-right: 10px
+
+  .add-content
+    text-align: left
+    margin: 30px 0 50px
+
+  .spoiler input[type=checkbox],
+  .spoiler input[type=checkbox] + .add-content,
+  .spoiler input[type=checkbox]:checked ~ .add-btn
+    display: none
+
+  .spoiler input[type=checkbox]:checked + .add-content
+    display: block
+
+.line-timeline,
+.timeline
+  width: 2500px
+
+.timeline .period
+  display: block
+  font-size: 19px
+  line-height: 1
+  color: #fff
+  margin-bottom: 20px
+  white-space: nowrap
+
+  &::first-letter
+    text-transform: uppercase
+
+.period-item
+  position: relative
+  padding-right: 15px
+
+  &:after
+    content: ''
+    position: absolute
+    display: block
+    top: 39px
+    left: 7px
+    right: -7px
+    border-top: 14px solid #2eb6f7
+
+  &:last-child
+    &:after
+      right: 20px
+      background: url('./img/roadmap-tick.svg') no-repeat 0 100%
+      background-position: right center
+
+    &:before
+      content: ''
+      position: absolute
+      top: 39px
+      right: 6px
+      border: 7px solid transparent
+      border-left: 7px solid #2eb6f7
+
+  &.ready
+    &:after
+      border-top: 14px solid #7ed321
+
+.timeline .bullet
+  position: relative
+  display: block
+  width: 14px
+  height: 14px
+  border-radius: 100%
+  background: #fff
+  margin-bottom: 10px
+  z-index: 1
+
+  &:after
+    content: ''
+    position: absolute
+    top: 1px
+    left: 2px
+    display: block
+    width: 10px
+    height: 10px
+    background: url('./img/roadmap-tick.svg') no-repeat 0 100%
+
+.timeline .period-title
+  display: block
+  font-size: 19px
+  line-height: 1
+  color: #fff
+  margin-bottom: 10px
+
+.timeline ul,
+.timeline li
+  display: block
+  list-style: none
+  padding: 0
+  margin: 0
+
+.timeline li
+  font-size: 15px
+  line-height: 1.2
+  margin-bottom: 8px
+
+.section-features
+  padding-top: 50px
+  padding-bottom: 50px
+
+  .icon-stq
+    height: 70px
+    padding: 5px 0 5px
+
+  h5
+    font-size: 22px
+
+  .h1
+    max-width: 700px
+    margin-left: auto
+    margin-right: auto
+
+.section-stq
+  padding-bottom: 50px
+
+  img
+    max-width: 100%
+
+  .row
+    justify-content: center
+
+.section-functionality
+  padding-bottom: 50px
+
+  .chisel
+    width: 100%
+    text-align: left
+    padding: 10px 20px
+
+  .turquoise
+    color: #2aafef
+    font-size: 18px
+
+.section-phased-use
+  padding-bottom: 50px
+
+  img
+    max-width: 100%
+
+  .row
+    justify-content: center
+
+.section-bonus-system
+  padding-top: 100px
+
+  img
+    max-width: 100%
+
+  .text
+    margin-left: 30px
+    margin-right: 30px
+
+    &:after
+      content: ''
+      display: table
+      clear: both
+
+    img
+      float: left
+
+    p
+      text-align: left
+      padding-left: 85px
+
+  .row
+    justify-content: center
+
+  .bonus-item
+    padding: 0
+    text-align: left
+
+    .head
+      position: relative
+      padding: 0 15px
+      color: #fff
+
+      .check
+        position: absolute
+        top: 6px
+        right: 11px
+
+      .bold
+        position: absolute
+        top: 8px
+        right: 53px
+        // opacity: .8
+
+    .amount
+      min-height: initial
+      border-bottom: 1px solid rgba(48,165,221,.33)
+      padding: 15px
+
+      @media (min-width: 992px)
+        min-height: 140px
+        padding: 25px 15px 15px
+
+    .body
+      padding: 30px 15px
+      font-size: 14px
+
+      ul
+        padding-left: 15px
+
+  .floor
+    .left
+      text-align: left
+      border-right: 1px solid #1780b2
+      padding-right: 20px
+      margin-right: 20px
+
+      @media (max-width: 415px)
+        font-size: 12px
+        padding-right: 10px
+        margin-right: 10px
+
+    .right
+      text-align: left
+
+      + .right
+        margin-left: 20px
+
+        @media (max-width: 415px)
+          margin-left: 10px
+
+      @media (max-width: 415px)
+        font-size: 12px
+
+    .blue
+      color: #137eb1
+      font-size: 25px
+
+    .bonus-amount
+      // font-size: 14px
+
+      @media (max-width: 415px)
+        font-size: 12px
+
+  table
+    width: 100%
+    color: #fff
+
+    @media (max-width: 415px)
+      font-size: 12px
+
+    tr
+      td
+        background: #30a5dd
+
+    tr:first-child
+      td
+        background: #d3b221
+
+    td
+      text-align: center
+      width: 14%
+
+
+.emission-calculator
+  justify-content: space-between
+
+  .input-block
+    position: relative
+    max-width: 270px
+    margin: 0 auto
+
+  input
+    height: 50px
+    border: 1px solid #e0dddd !important
+    font-size: 24px
+    font-weight: bold
+    background-color: #fff
+
+    &::placeholder
+      color: #b5b5b5
+
+  .input-addon
+    position: absolute
+    top: 7px
+    right: 13px
+    font-size: 24px
+    font-weight: bold
+
+  .dividends-label
+    font-weight: bold
+
+  .dividends
+    font-size: 24px
+    font-weight: bold
+
+  .extra
+    font-size: 13px
+    color: #787777
+
+.table-row-details
+  margin: 0
+  border-bottom: 1px solid #cee2ea
+
+  .outer
+    strong
+      white-space: nowrap
+
+  .hint
+    font-size: 14px
+
+.pie
+  text-align: center
+  font-weight: bold
+
+.pie img
+  width: 100%
+  height: auto
+
+.section-emission
+  padding-top: 50px
+  padding-bottom: 50px
+
+.section-emission .card
+  max-width: 100%
+
+.section-statistics
+  padding-top: 50px
+  padding-bottom: 50px
+
+  img
+    max-width: 100%
+
+  .row
+    justify-content: center
+
+.smart-roof
+  position: relative
+  display: block
+  width: 100%
+  max-height: 55px
+  z-index: 2
+
+.section-smart
+  position: relative
+  padding-top: 50px
+  padding-bottom: 50px
+  color: #ffffff
+  background: linear-gradient(-180deg, #0b80b8 0%, #ffffff 96%)
+
+  .screenshot
+    max-width: 100%
+
+  .row
+    justify-content: center
+
+  .cta-button
+      img
+        margin-top: -4px
+
+  .icon
+    display: block
+    margin: 0 auto 20px
+
+.section-features-img
+  padding-bottom: 50px
+  background: linear-gradient(-180deg, #ffffff 0%, #efefef 96%)
+
+  .screenshot
+    max-width: 100%
+
+  .row
+    justify-content: center
+
+.avatar-scroll-container
+  display: block
+  scroll-behavior: smooth
+  overflow-x: auto
+  position: relative
+  padding-left: 20px
+
+.avatar-row
+  max-width: 1000px
+  min-width: 1000px
+  margin: 0 auto
+
+.avatar
+  display: block
+  border-radius: 100%
+  width: 100%
+  max-width: 150px
+  height: auto
+  border: 4px solid #fff
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.18)
+  margin: 20px auto 10px
+
+.name
+  display: block
+  font-size: 18px
+  font-weight: bold
+  color: #000
+  line-height: 22px
+
+.position
+  display: block
+  font-size: 12px
+  color: #388dc8
+  line-height: 14px
+
+.section-roadmap
+  position: relative
+  bottom: -65px
+  padding: 160px 0 120px
+  color: #ffffff
+  background: linear-gradient(-180deg, #006190 0%, #43b1e7 96%)
+  overflow: hidden
+
+  .container-fluid
+    padding: 0
+
+  .shape-roof
+    position: absolute
+    top: 0
+    width: 100%
+    max-height: 50px
+    z-index: 1
+
+  .shape-earth
+    position: absolute
+    top: 140px
+    right: -250px
+    height: 680px
+
+
+  .container
+    z-index: 2
+
+    .details-text
+      padding: 0 50px
+
+    b
+      font-size: 18px
+
+  .background
+    position: absolute
+    top: -1px
+    width: 100%
+
+  .timeline-container
+    position: relative
+    min-height: 340px
+
+.section-ico-structure
+  padding-top: 100px
+  text-align: center
+
+  .sign
+    display: inline-block
+    text-align: left
+
+    .path-legend
+      display: inline-block
+      line-height: 36px
+
+      & + .path-legend
+        margin-left: 20px
+
+      .color-blue
+        font-weight: bold
+
+      .square
+        display: inline-block
+        width: 10px
+        height: 10px
+        margin-right: 5px
+        vertical-align: middle
+
+  strong.units
+    text-transform: uppercase
+
+  .img-fluid
+    width: 100%
+    max-width: 550px
+
+.section-advisors
+  .avatar
+    margin-top: 0
+
+  .row
+    justify-content: center
+
+  .position, .name
+    @media (max-width: 767px)
+      text-align: center
+
+  .description
+    @media (max-width: 767px)
+      display: block
+
+.section-early-investors
+  padding-top: 50px
+
+.section-people
+  .avatar-wrapper
+    position: relative
+    width: 150px
+    margin: 0 auto
+
+    a
+      position: absolute
+
+    .first-of-two
+      right: -12px
+      bottom: 37px
+
+    .second-of-two
+      bottom: 4px
+      right: 4px
+
+    .alone
+      bottom: 4px
+      right: 4px
+
+.section-team
+  position: relative
+  padding-top: 50px
+  z-index: 2
+
+  .avatar-wrapper
+    position: relative
+    width: 150px
+    margin: 0 auto
+
+    a
+      position: absolute
+
+    .first-of-two
+      right: -12px
+      bottom: 37px
+
+    .second-of-two
+      bottom: 4px
+      right: 4px
+
+    .alone
+      bottom: 4px
+      right: 4px
+
+  .row
+    justify-content: center
+
+.section-team,
+.section-advisors,
+.section-early-investors
+  .social
+    margin: 20px 0 14px
+
+    a
+      display: inline-block
+
+      + a
+        margin-left: 20px
+
+.beautiful-shadow
+  position: relative
+  z-index: 1
+
+  .shadow
+    width: 70%
+    height: 40px
+    margin: 0 auto
+    border-radius: 50%
+    box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.1)
+
+  &:before
+    content: ''
+    position: absolute
+    top: -20px
+    bottom: -10px
+    left: 0
+    right: 0
+    display: block
+    background: #ffffff
+
+.section-team-photo
+  background-image: linear-gradient(-180deg, #7da7d5 0%, #244c6f 100%)
+
+.section-projects
+  padding-top: 50px
+  padding-bottom: 50px
+
+  .card
+    max-width: 100%
+
+.advice-block
+  float: left
+
+.footer
+  .bg
+    position: absolute
+    top: 0
+    bottom: 0
+    width: 100%
+    background-image: url('./img/stq_background.png')
+    background-repeat: no-repeat
+    background-size: 100%
+    background-color: #000
+    background-position-x: center
+    transform: rotate(180deg)
+    z-index: 0
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      bottom: 0
+      width: 100%
+      display: block
+      background-color: rgba(0,0,0,.7)
+      background-image: url('./img/bg.svg')
+      background-size: 5px
+      z-index: 100
+
+    @media (max-width: 1200px)
+      background-image: url('./img/stq_background_1024px.png')
+      background-size: 150%
+
+    @media (max-width: 1024px)
+      background-image: url('./img/stq_background_1024px.png')
+      background-size: 200%
+
+    @media (max-width: 768px)
+      background-image: url('./img/stq_background_768px.png')
+      background-size: 250%
+
+    @media (max-width: 500px)
+      background-image: url('./img/stq_background_500px.png')
+      background-size: 300%
+
+@media (max-width: 767px)
+  .h1
+    font-size: 24px
+    line-height: 30px
+
+  .infoboard
+    max-width: 350px
+    margin: 0 auto
+
+    .col-md-6:first-child
+      border-right: 0 solid #fff
+      border-bottom: 1px solid #fff
+      padding-bottom: 20px
+      margin-bottom: 20px
+
+  .section-earth
+    position: relative
+    top: -1px
+    // background: #000 none
+    background-size: cover
+    background-position: center
+    padding-top: 50px
+    padding-bottom: 50px
+
+  .timeline-container
+    margin-top: 0
+
+  .table-row-details
+    padding: 1rem 0 !important
+
+    &:first-child
+      border-top: 1px solid #cee2ea
+
+  .calculator
+    height: auto
+    font-size: 16px
+
+    input, .input-group-addon
+      height: 50px
+      font-size: 16px
+
+    .equal
+      font-size: 28px
+      margin: 0 10px
+
+  .roadmap
+    margin-top: 30px
+
+@media (min-width: 768px)
+  .section-emission .card
+    width: 48%
+
+  .section-projects .card
+    width: 32%
+
+@media (min-width: 1000px)
+  .section-earth
+    background-position: 0 220px
+
+@media (min-width: 1400px)
+  .section-earth
+    background-position: 0 170px
+
+@media (min-width: 1700px)
+  .section-earth
+    background-position: 0 120px
+
+@media (min-width: 2000px)
+  .section-earth
+    background-position: 0 70px
+
+.merch-popup
+  //padding-top: 57px
+  text-align: center
+
+  img
+    display: block
+    width: 100%
+
+    &.merch-small
+      //max-width: 350px
+      //margin: 0 auto
+
+  .merch-button
+    display: inline-block
+    height: 60px
+    margin-top: 30px
+    padding: 0 20px
+    line-height: 60px
+    font-size: 24px
+    border-radius: 8px
+    background-color: #2FBAFD
+    cursor: pointer
+    transition: all .3s ease
+
+    &:hover
+      background-color: #5ac9ff
+
+    @media (max-width: 767px)
+      height: 50px
+      line-height: 50px
+      font-size: 15px

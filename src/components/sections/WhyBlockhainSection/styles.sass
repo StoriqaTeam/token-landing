@@ -1,0 +1,52 @@
+.why-blockchain-section
+
+  .description
+    margin: 0 auto 100px
+    max-width: 700px
+
+  .subtitle
+    margin-bottom: 40px
+    font-size: 20px
+
+  .wrap
+    border: 1px solid #c6c6c6
+
+    @media (max-width: 992px)
+      max-width: 380px
+      margin: 0 auto
+
+  .item
+    font-size: 14px
+    cursor: default
+
+    & + .item
+      border-left: 1px solid rgba(198,198,198,.46)
+
+      @media (max-width: 992px)
+        border-left: 0
+        border-top: 1px solid rgba(198,198,198,.46)
+
+    .icon
+      height: 90px
+
+    .white
+      display: none
+
+    .text
+      opacity: .61
+
+    &:hover
+      background: linear-gradient(-180deg, #30bbfb 0%, #43CECD 96%)
+
+      .icon
+        display: none
+
+      .white
+        display: inline
+
+      .text
+        opacity: 1
+
+  .module
+    & + .module
+      margin-top: 80px

@@ -1,0 +1,50 @@
+[
+  {
+    "year": "2017",
+    "quarter": "1 quarter",
+    "info": "Storiqa idea & first marketing researches",
+    "status": "deployed"
+  },
+  {
+    "year": "2017",
+    "quarter": "2 quarter",
+    "info": "The earliest version of the product",
+    "status": "deployed"
+  },
+  {
+    "year": "2017",
+    "quarter": "3 quarter",
+    "info": "Token Sale preparation",
+    "status": "deployed"
+  },
+  {
+    "year": "2017",
+    "quarter": "4 quarter",
+    "info": "Token Pre-Sale & start of the Token Sale",
+    "status": "deployed"
+  },
+  {
+    "year": "2018",
+    "quarter": "1 quarter",
+    "info": "Token Sale finish, Tokens emission, unlocking and distribution",
+    "status": "deployed"
+  },
+  {
+    "year": "2018",
+    "quarter": "2-3 quarter",
+    "info": "Product MVP. Shops & B2B partnerships.",
+    "status": "deployed"
+  },
+  {
+    "year": "2018",
+    "quarter": "3-4 quarter",
+    "info": "Platform pre-launch. Beta testing. Blockchain Testnet.",
+    "status": "in_progress"
+  },
+  {
+    "year": "2019",
+    "quarter": "1 quarter",
+    "info": "Production release. Customers attraction. Blockchain Mainnet.",
+    "status": "planned"
+  }
+]

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="13894 2699.5 61.174 32.8">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #2fbafd;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+      }
+
+      .cls-3 {
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="Group_326" data-name="Group 326" transform="translate(12883)">
+    <g id="Group_289" data-name="Group 289" transform="translate(1046.997 2700.5)">
+      <path id="Path_463" data-name="Path 463" class="cls-1" d="M6.5,7.1a6.2,6.2,0,0,1,12.4,0c0,3.4-2.9,7.5-6.2,7.5S6.5,10.5,6.5,7.1Z"/>
+      <path id="Path_464" data-name="Path 464" class="cls-1" d="M8.9,15.1c-.2,0-.4.1-.6.1a10.106,10.106,0,0,0-5.9,4c-1.7,2.8-1.6,4.5-1,10H23.9c.7-5.6.7-7.3-1-10a9.84,9.84,0,0,0-6-4c-.2,0-.3-.1-.5-.1A23.567,23.567,0,0,0,8.9,15.1Z"/>
+      <g id="Group_286" data-name="Group 286">
+        <line id="Line_241" data-name="Line 241" class="cls-1" y2="6.2" transform="translate(7.1 22.9)"/>
+        <line id="Line_242" data-name="Line 242" class="cls-1" y2="6.2" transform="translate(18.2 22.9)"/>
+      </g>
+    </g>
+    <g id="Group_290" data-name="Group 290" transform="translate(1011 2699.5)">
+      <path id="Path_465" data-name="Path 465" class="cls-1" d="M2.9,23.4h0A1.9,1.9,0,0,1,1,21.5V14a1.988,1.988,0,0,1,1.9-2h0a2.006,2.006,0,0,1,2,2v7.5A1.988,1.988,0,0,1,2.9,23.4Z"/>
+      <path id="Path_466" data-name="Path 466" class="cls-1" d="M24.7,23.4h0a1.9,1.9,0,0,1-1.9-1.9V14a1.9,1.9,0,0,1,1.9-1.9h0A1.9,1.9,0,0,1,26.6,14v7.5A1.967,1.967,0,0,1,24.7,23.4Z"/>
+      <path id="Path_467" data-name="Path 467" class="cls-1" d="M2.9,11.9a10.9,10.9,0,0,1,21.8,0"/>
+      <path id="Path_468" data-name="Path 468" class="cls-2" d="M21.2,8.6a7.951,7.951,0,0,0-14.6,0"/>
+      <circle id="Ellipse_200" data-name="Ellipse 200" class="cls-1" cx="2" cy="2" r="2" transform="translate(14 27.8)"/>
+      <path id="Path_469" data-name="Path 469" class="cls-3" d="M28.5,17c0,5.2,1.2,13-10.6,13"/>
+    </g>
+  </g>
+</svg>

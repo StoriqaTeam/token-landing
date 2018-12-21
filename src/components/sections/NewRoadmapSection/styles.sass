@@ -1,0 +1,190 @@
+@keyframes shadow
+  0%
+    box-shadow: 0 0 4px 0px #2FBAFD
+  50%
+    box-shadow: 0 0 9px 1px #2FBAFD
+  100%
+    box-shadow: 0 0 4px 0px #2FBAFD
+
+.new-roadmap-section
+  position: relative
+  margin-top: -100px
+  margin-bottom: -100px
+  padding-top: 200px
+  padding-bottom: 150px
+  background: url('./img/moun3_1300.png') no-repeat
+  background-size: cover
+  background-position-y: bottom
+  z-index: 99
+
+  .roadmap-wrapper
+    width: 1080px
+    height: 76px
+    margin: 200px auto 200px
+    background: url('./img/roadmap.svg') center no-repeat
+
+    .roadmap__item
+      display: inline-block
+      position: relative
+      width: 17px
+      height: 18px
+      text-align: center
+      // background: url('./img/hexagon.png') no-repeat
+      // background-size: 17px
+      margin-right: 134px
+
+      &:before
+        content: ''
+        position: absolute
+        top: 0
+        display: block
+        width: 18px
+        height: 18px
+        border-radius: 50%
+
+        @media (max-width: 1280px)
+          top: 3px
+          left: -1px
+
+      &.deployed
+        &:before
+          border: 1px solid #070d11
+          background-color: #70C94F
+
+      &.in_progress
+        &:before
+          border: 1px solid #070d11
+          background-color: #2FBAFD
+          animation: shadow 1.5s linear infinite
+
+      &.planned
+        &:before
+          border: 1px solid #070d11
+          background-color: #6A6A6A
+
+    .roadmap__item:nth-child(odd)
+      top: -72px
+      // background-position: center bottom
+
+    .roadmap__item:nth-child(even)
+      // background-position: center top
+      margin-top: 65px
+
+    .roadmap__info, .roadmap__date
+      width: 220px
+      left: -110px
+      margin-left: 50%
+
+    .roadmap__date
+      position: absolute
+      padding: 0 15px
+      color: #2FBAFD
+      font-size: 18px
+      font-weight: 500
+      line-height: 1.4
+
+    .roadmap__info
+      position: absolute
+      padding: 0 15px
+      color: #fff
+      font-size: 16px
+      font-weight: 300
+      line-height: 20px
+
+    .roadmap__item:nth-child(odd) .roadmap__date
+      top: -22px
+      transform: translate(0, -100%)
+
+    .roadmap__item:nth-child(odd) .roadmap__info
+      top: -70px
+      transform: translate(0, -100%)
+
+    .roadmap__item:nth-child(even) .roadmap__date
+      bottom: -22px
+      transform: translate(0, 100%)
+
+    .roadmap__item:nth-child(even) .roadmap__info
+      bottom: -70px
+      transform: translate(0, 100%)
+
+    .roadmap__item:last-child
+      margin-right: 0
+
+    .roadmap__date__small
+      display: block
+      font-size: 14px
+
+  @media (max-width: 1280px)
+    .roadmap-wrapper
+      position: relative
+      width: 100%
+      max-width: 600px
+      padding: 0 20px
+      height: auto
+      margin: 60px auto 80px
+      background: none
+
+      &:before
+        content: ''
+        width: 2px
+        position: absolute
+        left: 27px
+        top: 10px
+        bottom: 0
+        background-color: #2FBAFD
+        opacity: .5
+        // background: -webkit-gradient(linear, left bottom, left top, from(#ca0050), color-stop(#7c60ff), color-stop(#4490ff), to(#00c9ff))
+        // background: -webkit-linear-gradient(bottom, #ca0050, #7c60ff, #4490ff, #00c9ff)
+        // background: linear-gradient(to top, #ca0050, #7c60ff, #4490ff, #00c9ff)
+
+      .roadmap__item
+        display: block
+        position: relative
+        width: 100%
+        height: auto
+        text-align: left
+        margin-top: 30px !important
+        margin-right: 0
+        background-size: 16px
+        padding-left: 30px
+
+      .roadmap__item:nth-child(odd), .roadmap__item:nth-child(even)
+        top: 0
+        background-position: left 5px
+
+      .roadmap__item:nth-child(odd) .roadmap__date,
+      .roadmap__item:nth-child(odd) .roadmap__info,
+      .roadmap__item:nth-child(even) .roadmap__date,
+      .roadmap__item:nth-child(even) .roadmap__info
+        top: 0
+        transform: none
+
+      .roadmap__info, .roadmap__date
+        width: auto
+        left: 0
+        position: static
+        display: block
+        margin-left: 0
+
+      .roadmap__date
+        display: block
+        color: #2FBAFD
+        font-size: 20px
+        font-weight: 500
+        line-height: 24px
+        width: 100%
+        margin-bottom: 10px
+
+      .roadmap__info
+        color: #fff
+        font-size: 16px
+        font-weight: 300
+        line-height: 20px
+
+      .roadmap__date__small
+        display: inline-block
+        font-size: 14px
+        margin-left: 7px
+
+
+

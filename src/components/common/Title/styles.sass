@@ -1,0 +1,24 @@
+.section-title
+  position: relative
+  margin-bottom: 20px
+  font-size: 24px
+
+  &.black
+    color: #000 !important
+
+  &:after
+    content: ''
+    position: absolute
+    bottom: -6px
+    left: 50%
+    margin-left: -45px
+    display: block
+    width: 90px
+    border-bottom: 4px solid #2eb6f7
+
+  &.whiteline
+    &:after
+      border-bottom: 4px solid #fff
+
+  .text
+    text-transform: uppercase

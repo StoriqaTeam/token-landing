@@ -1,0 +1,58 @@
+.market-section
+  .container
+    .images
+      .img
+        display: none
+
+        &.visible
+          display: block
+
+      img
+        max-width: 100%
+
+  .tabs
+    margin-top: 70px
+
+    .row
+      padding: 0 15px
+
+    .tab
+      font-size: 24px
+      cursor: pointer
+      transition: all 0.1s ease-in-out
+
+      @media (max-width: 575px)
+        font-size: 18px
+
+      span
+        opacity: .3
+
+      &.tab-first
+        border: 1px solid #a8a8a8
+        border-right: 0
+        border-top-left-radius: 8px
+        border-bottom-left-radius: 8px
+
+        @media (max-width: 575px)
+          border-right: 1px solid #a8a8a8
+          border-bottom: 0
+          border-bottom-left-radius: 0
+          border-top-right-radius: 8px
+
+      &.tab-second
+        border: 1px solid #a8a8a8
+        border-top-right-radius: 8px
+        border-bottom-right-radius: 8px
+
+        @media (max-width: 575px)
+          border-top-right-radius: 0
+          border-bottom-left-radius: 8px
+
+      &.active
+        background: rgba(85,85,85,.40)
+
+        span
+          opacity: 1
+
+      &:hover
+        background: rgba(85,85,85,.50)

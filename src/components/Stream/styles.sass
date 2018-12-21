@@ -1,0 +1,55 @@
+.stream-wrapper
+  li
+    display: inline-block
+    color: #fff
+    border: 1px solid #fff
+    border-radius: 2px
+    line-height: 30px
+    height: 34px
+    width: 34px
+    cursor: pointer
+
+    @media (max-width: 415px)
+      height: 25px
+      width: 25px
+      line-height: 24px
+
+    @media (max-width: 361px)
+      height: 18px
+      width: 18px
+      line-height: 16px
+      font-size: 12px
+
+    + li
+      margin-left: 10px
+
+  .preview-block
+    position: relative
+    display: block
+    cursor: pointer
+
+    .background
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: #fff
+      opacity: .2
+      transition: opacity .25s
+
+      &:hover
+        opacity: 0
+
+    img
+      display: block
+      max-width: 100%
+      cursor: pointer
+
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+

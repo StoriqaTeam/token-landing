@@ -1,0 +1,295 @@
+@keyframes shadow
+  0%
+    box-shadow: 0 0 4px 0px #2FBAFD
+  50%
+    box-shadow: 0 0 9px 1px #2FBAFD
+  100%
+    box-shadow: 0 0 4px 0px #2FBAFD
+
+.core-section
+  position: relative
+  padding-top: 150px
+  padding-bottom: 200px
+  background: #151f31
+  overflow: hidden
+  z-index: 102
+
+  .present-body
+    padding-left: 15px
+    padding-right: 15px
+
+  .container
+  	z-index: 2
+
+  .left-half
+    padding-left: 80px
+    padding-right: 80px
+
+    @media (max-width: 413px)
+      padding-left: 60px
+      padding-right: 30px
+
+  .right-half
+    padding-left: 80px
+    padding-right: 80px
+
+    @media (max-width: 413px)
+      padding-left: 60px
+      padding-right: 30px
+
+  .left-half-infrastucture, .right-half-infrastucture
+    padding-left: 80px
+    padding-right: 80px
+
+    @media (max-width: 413px)
+      padding-left: 60px
+      padding-right: 30px
+
+  .half-title
+    font-size: 24px
+    color: #fff
+
+  .present-img
+    margin-bottom: 40px
+
+    img
+      display: block
+      width: 100%
+
+  .small-block
+    position: relative
+    margin-top: 20px
+    padding: 20px
+    background-color: #fff
+    border: 1px solid #2597CE
+    border-radius: 8px
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.33)
+
+  .item-block
+    & + .item-block
+      margin-top: 10px
+
+  .hanger
+    position: absolute
+    top: 23px
+    left: -45px
+    padding: 1px 6px 1px 7px
+    text-align: center
+    background-color: #2597CE
+    color: #9FE0FF
+    border-radius: 4px
+    font-size: 10px
+
+  .left
+    width: calc(100% - 85px)
+    padding-right: 20px
+    border-right: 1px solid #DBDBDB
+    font-size: 16px
+    color: #0C587C
+
+    @media (max-width: 350px)
+      font-size: 12px
+      width: calc(100% - 60px)
+
+  .right
+    position: relative
+    width: 85px
+    margin-top: 5px
+    padding-left: 25px
+    font-size: 10px
+    color: #919191
+
+    @media (max-width: 350px)
+      width: 60px
+
+    &:before
+      content: ''
+      position: absolute
+      top: 3px
+      left: 11px
+      display: block
+      width: 8px
+      height: 8px
+      border-radius: 50%
+
+    &.green
+      &:before
+        background-color: #70C94F
+
+    &.blue
+      &:before
+        background-color: #2FBAFD
+        animation: shadow 1.5s linear infinite
+
+    &.grey
+      &:before
+        background-color: #6A6A6A
+
+  .chapter
+
+    .chapter-title
+      margin-top: 35px
+      font-size: 18px
+
+    .chapter-items
+      position: relative
+
+      &:before
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        right: -20px
+        width: 12px
+        border-top: 1px solid #283957
+        border-bottom: 1px solid #283957
+        border-right: 1px solid #283957
+
+        @media (max-width: 767px)
+          border-top: 0
+          border-bottom: 0
+          right: -10px
+          border-right: 2px solid #283957
+
+      .additionally
+        position: absolute
+        top: 50%
+        right: -90px
+        margin-top: -23px
+
+        @media (max-width: 767px)
+          top: 100%
+          right: -30px
+          margin-top: -17px
+
+        .text
+          position: absolute
+          left: 0
+          font-size: 12px
+          margin-top: 35px
+
+          @media (max-width: 767px)
+            font-size: 10px
+            transform-origin: 0 100%
+            transform: rotate(-90deg)
+            white-space: nowrap
+            margin: 0
+            top: 0
+
+        img
+          height: 28px
+
+          @media (max-width: 767px)
+            display: none
+
+  .core-bg
+    position: absolute
+    top: 40px
+    bottom: 0
+    width: 150%
+    margin-left: -25%
+    z-index: 1
+
+    img
+      display: block
+      width: 100%
+      height: 100%
+
+    @media (max-width: 1499px)
+      width: 150%
+      margin-left: -25%
+
+    @media (max-width: 1199px)
+      width: 200%
+      margin-left: -50%
+      bottom: 0
+
+    @media (max-width: 991px)
+      width: 350%
+      margin-left: -125%
+
+    @media (max-width: 767px)
+      width: 700%
+      margin-left: -300%
+      bottom: 50px
+
+    @media (max-width: 465px)
+      width: 800%
+      margin-left: -350%
+
+    @media (max-width: 413px)
+      width: 1000%
+      margin-left: -450%
+
+  .ib
+    position: relative
+    width: 224px
+    height: 32px
+    margin: 40px auto 0
+    text-align: center
+    line-height: 32px
+    background-color: #2597CE
+    z-index: -2
+
+    @media (max-width: 991px)
+      display: none
+
+    &:before, &:after
+      content: ''
+      position: absolute
+      top: 0
+      display: block
+      width: 15px
+      height: 32px
+      border: 1px solid #2597CE
+      border-radius: 50%
+      background-color: #fff
+
+    &:before
+      left: -8px
+
+    &:after
+      right: -8px
+
+  .footer-i-block
+    position: relative
+    padding: 
+    z-index: 2 !important
+
+    &:before, &:after
+      content: ''
+      position: absolute
+      bottom: -56px
+      display: block
+      width: 100px
+      height: 100px
+      border-bottom: 1px solid #2597CE
+      z-index: -1
+
+      @media (max-width: 991px)
+        display: none
+
+    &:before
+      left: 358px
+      border-left: 1px solid #0C587C
+
+      @media (max-width: 1199px)
+        left: 268px
+
+    &:after
+      right: 358px
+      border-right: 1px solid #0C587C
+
+      @media (max-width: 1199px)
+        right: 268px
+
+  .additionally
+    margin-top: 25px
+    padding-left: 35px
+    font-size: 12px
+
+    img
+      display: block
+      height: 28px
+      margin-bottom: 10px
+  

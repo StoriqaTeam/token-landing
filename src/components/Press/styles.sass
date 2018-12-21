@@ -1,0 +1,33 @@
+.section-press
+  background: #f7f7f7
+
+  .bubble
+    background: #fff
+    border: 1px solid rgba(215,215,215,.59)
+    position: relative
+    box-shadow: 0 20px 24px rgba(0,0,0,.07)
+    padding: 25px 30px
+    border-radius: 5px
+
+    &::before,
+    &::after
+      content: ''
+      position: absolute
+      top: 100%
+
+    &::before
+      border-color: rgba(215,215,215,.59) rgba(215,215,215,.59) transparent transparent
+      border-style: solid
+      border-width: 9px
+      right: 38px
+
+    &::after
+      border-color: #fff #fff transparent transparent
+      border-style: solid
+      border-width: 8px 7px
+      right: 39px
+
+  img
+    height: auto
+    width: 100%
+    max-width: 200px

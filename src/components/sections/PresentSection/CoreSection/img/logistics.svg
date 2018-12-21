@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="13894 2496.5 61.174 31">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        stroke: #2fbafd;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="Group_325" data-name="Group 325" transform="translate(12883)">
+    <g id="Group_287" data-name="Group 287" transform="translate(1046.997 2496.5)">
+      <path id="Path_463" data-name="Path 463" class="cls-1" d="M6.5,7.1a6.2,6.2,0,0,1,12.4,0c0,3.4-2.9,7.5-6.2,7.5S6.5,10.5,6.5,7.1Z"/>
+      <path id="Path_464" data-name="Path 464" class="cls-1" d="M8.9,15.1c-.2,0-.4.1-.6.1a10.106,10.106,0,0,0-5.9,4c-1.7,2.8-1.6,4.5-1,10H23.9c.7-5.6.7-7.3-1-10a9.84,9.84,0,0,0-6-4c-.2,0-.3-.1-.5-.1A23.567,23.567,0,0,0,8.9,15.1Z"/>
+      <g id="Group_286" data-name="Group 286">
+        <line id="Line_241" data-name="Line 241" class="cls-1" y2="6.2" transform="translate(7.1 22.9)"/>
+        <line id="Line_242" data-name="Line 242" class="cls-1" y2="6.2" transform="translate(18.2 22.9)"/>
+      </g>
+    </g>
+    <g id="Group_288" data-name="Group 288" transform="translate(1011 2496.5)">
+      <g id="cMCwar.tif_1_">
+        <rect id="Layer_0_1_" class="cls-2" width="33" height="31"/>
+      </g>
+      <rect id="Rectangle_1002" data-name="Rectangle 1002" class="cls-3" width="30" height="6" transform="translate(1.5 1)"/>
+      <rect id="Rectangle_1003" data-name="Rectangle 1003" class="cls-3" width="26" height="22.2" transform="translate(3.5 7)"/>
+      <line id="Line_243" data-name="Line 243" class="cls-4" x2="10" transform="translate(11.5 14.6)"/>
+    </g>
+  </g>
+</svg>

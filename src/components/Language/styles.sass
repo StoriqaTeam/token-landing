@@ -1,0 +1,64 @@
+.lang
+  font-size: 12px
+
+  .select
+    position: relative
+    display: inline-block
+    color: #fff
+    cursor: pointer
+    z-index: 1
+
+    .active
+      font-weight: bold
+
+      .locale
+        &.hidden
+          display: none
+
+    .items
+      position: absolute
+      top: 0px
+      left: -23px
+
+      button
+        display: block
+        margin: 0
+
+    .arrow
+      border-color: #fff transparent transparent
+      border-style: solid
+      border-width: 5px 5px 2.5px
+      display: inline-block
+      height: 0
+      width: 0
+      position: relative
+      top: 1px
+      margin-left: 5px
+
+      &.up
+        border-color: transparent transparent #fff
+        top: -2px
+        border-width: 0 5px 5px
+
+  .stick
+    position: relative
+    top: 7px
+    display: inline-block
+    width: 1px
+    height: 25px
+    margin: 0 12px 0 22px
+    border-left: 1px solid rgba(255,255,255,.6)
+
+  button, button:focus
+    background: transparent
+    border: 0
+    padding: 0
+    cursor: pointer
+    color: #fff
+    outline: 0
+
+    &.active
+      color: #2eb6f7
+
+    + button
+      margin-left: 20px

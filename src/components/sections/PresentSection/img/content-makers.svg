@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="13899 2296.5 56.174 30.9">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #2fbafd;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        fill: #2fbafd;
+      }
+    </style>
+  </defs>
+  <g id="Group_324" data-name="Group 324" transform="translate(12883)">
+    <g id="Group_294" data-name="Group 294" transform="translate(1046.997 2296.5)">
+      <path id="Path_463" data-name="Path 463" class="cls-1" d="M6.5,7.1a6.2,6.2,0,0,1,12.4,0c0,3.4-2.9,7.5-6.2,7.5S6.5,10.5,6.5,7.1Z"/>
+      <path id="Path_464" data-name="Path 464" class="cls-1" d="M8.9,15.1c-.2,0-.4.1-.6.1a10.106,10.106,0,0,0-5.9,4c-1.7,2.8-1.6,4.5-1,10H23.9c.7-5.6.7-7.3-1-10a9.84,9.84,0,0,0-6-4c-.2,0-.3-.1-.5-.1A23.567,23.567,0,0,0,8.9,15.1Z"/>
+      <g id="Group_286" data-name="Group 286">
+        <line id="Line_241" data-name="Line 241" class="cls-1" y2="6.2" transform="translate(7.1 22.9)"/>
+        <line id="Line_242" data-name="Line 242" class="cls-1" y2="6.2" transform="translate(18.2 22.9)"/>
+      </g>
+    </g>
+    <g id="Group_295" data-name="Group 295" transform="translate(1016 2297.5)">
+      <circle id="Ellipse_201" data-name="Ellipse 201" class="cls-1" cx="1.8" cy="1.8" r="1.8" transform="translate(5.2 22)"/>
+      <path id="Path_472" data-name="Path 472" class="cls-2" d="M22.6,6.3V28.9H1V1H17.2"/>
+      <path id="Path_473" data-name="Path 473" class="cls-2" d="M22.6,6.3H17.3V1"/>
+      <line id="Line_244" data-name="Line 244" class="cls-2" x2="5.3" y2="5.4" transform="translate(17.3 1)"/>
+      <line id="Line_245" data-name="Line 245" class="cls-3" x2="5.6" transform="translate(4.4 6)"/>
+      <line id="Line_246" data-name="Line 246" class="cls-3" x2="5.6" transform="translate(13.4 23.3)"/>
+      <line id="Line_247" data-name="Line 247" class="cls-3" x2="14.5" transform="translate(4.4 10)"/>
+      <line id="Line_248" data-name="Line 248" class="cls-3" x2="14.5" transform="translate(4.4 12.7)"/>
+      <rect id="Rectangle_1004" data-name="Rectangle 1004" class="cls-4" width="12.5" height="3.1" transform="translate(5.5 15.7)"/>
+    </g>
+  </g>
+</svg>

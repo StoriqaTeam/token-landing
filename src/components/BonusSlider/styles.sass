@@ -1,0 +1,294 @@
+.slider-bonus
+  .slide-wrapper
+    width: 50%
+    height: 180px
+    padding: 10px
+
+    @media (max-width: 1199px)
+      height: 150px
+
+    @media (max-width: 768px)
+      height: 180px
+
+    @media (max-width: 413px)
+      height: 150px
+
+    .slide
+      position: relative
+      overflow: hidden
+      width: 100%
+      height: 100%
+      border: 1px solid
+      border-color: #9a9a9a
+      border-radius: 10px
+      background: rgba(0,0,0,.5)
+
+      .finish-wrap
+        height: 50px
+        transform: rotate(8deg)
+        opacity: 0.95
+        background-color: #4a4a4a
+        font-size: 18px
+        font-weight: bold
+        text-align: center
+        color: #9a9a9a
+        position: absolute
+        top: 0
+        bottom: 0
+        left: -5px
+        margin: auto
+        width: calc(100% + 10px)
+        z-index: 5
+        line-height: 48px
+
+        @media (max-width: 1199px)
+          height: 40px
+          line-height: 38px
+          font-size: 16px
+
+        @media (max-width: 768px)
+          height: 50px
+          line-height: 48px
+          font-size: 18px
+
+        @media (max-width: 413px)
+          height: 40px
+          line-height: 38px
+          font-size: 15px
+
+      &.disabled
+        border-color: rgba(219,219,219,.5)
+
+        .period, .ts, .label, .value
+          color: #9a9a9a
+
+      &.last
+        // border: 0
+
+        img
+          width: 90px
+
+      .period
+        font-size: 16px
+
+      .bottom
+        height: 100%
+        line-height: 22px
+
+        .token-price, .bonus
+          .label
+            font-size: 12px
+
+          .value
+            font-size: 22px
+
+      .ts
+        height: 100%
+        font-size: 22px
+
+      @media (max-width: 1199px) and (min-width: 769px), (max-width: 413px)
+        .period
+          font-size: 14px
+
+        .bottom
+          line-height: 20px
+
+          .token-price, .bonus
+            .label
+              font-size: 10px
+
+            .value
+              font-size: 18px
+
+        .ts
+          font-size: 18px
+
+      @media (max-width: 374px)
+        .period
+          font-size: 11px
+
+  .slide-wrapper-active
+    width: 100%
+    height: 310px
+    padding: 10px
+
+    @media (max-width: 1199px)
+      height: 250px
+
+    @media (max-width: 768px)
+      height: 310px
+
+    @media (max-width: 413px)
+      height: 250px
+
+    .slide
+      width: 100%
+      height: 100%
+      border: 1px solid
+      border-color: #2fbafd
+      border-radius: 10px
+      background: rgba(0,0,0,.4)
+
+      .top
+        width: 100%
+        height: 53%
+
+        .period
+          font-size: 22px
+
+      .bottom
+        position: relative
+        width: 100%
+        height: 47%
+
+        &:before
+          content: ''
+          position: absolute
+          top: -5px
+          width: 100%
+          border-top: 1px solid rgba(255,255,255,0.4)
+
+        &:after
+          content: ''
+          position: absolute
+          top: -5px
+          bottom: 47%
+          left: 50%
+          width: 1px
+          border-left: 1px solid rgba(255,255,255,0.4)
+
+        .up
+          width: 100%
+          height: 50%
+
+          .token-price
+            .label
+              font-size: 12px
+
+            .value
+              font-size: 30px
+              line-height: 30px
+
+          .bonus
+            .label
+              font-size: 12px
+
+            .value
+              font-size: 30px
+              line-height: 30px
+
+          div
+            width: 50%
+
+        .down
+          width: 100%
+          height: 50%
+
+          .tokens-button
+            width: 100%
+
+      @media (max-width: 1199px) and (min-width: 769px), (max-width: 413px)
+        .top
+          .period
+            font-size: 18px
+
+        .bottom
+          &:before
+            top: 0
+
+          &:after
+            top: 0
+            bottom: 55%
+
+          .up
+            .token-price
+              .label
+                font-size: 10px
+
+              .value
+                font-size: 22px
+                line-height: 22px
+
+            .bonus
+              .label
+                font-size: 10px
+
+              .value
+                font-size: 22px
+                line-height: 22px
+
+  .countdown-wrapper
+    .countdown
+      margin-top: 10px
+
+      .countdown-col
+        font-size: 40px
+        line-height: 32px
+
+        p
+          span
+            font-size: 12px
+
+    @media (max-width: 1199px) and (min-width: 769px), (max-width: 413px)
+      & > span
+        font-size: 14px
+
+      .countdown
+        margin-top: 10px
+
+        .countdown-col
+          font-size: 32px
+          line-height: 20px
+
+          p
+            span
+              font-size: 10px
+
+  .arrow
+    position: absolute
+    bottom: 72px
+    margin-top: -15px
+    display: block
+    height: 40px
+    width: 40px
+    z-index: 5
+    cursor: pointer
+    opacity: .8
+
+    @media (max-width: 1199px)
+      bottom: 55px
+
+    @media (max-width: 767px)
+      opacity: 1
+      top: 50%
+      bottom: auto
+      margin-top: -20px
+
+    &:hover
+      opacity: 1
+
+  .next-arrow
+    background: url('./img/next-arrow.svg') no-repeat center
+    right: -32px
+
+  .prev-arrow
+    background: url('./img/prev-arrow.svg') no-repeat center
+    left: -32px
+
+  @media (max-width: 1199px) and (min-width: 769px), (max-width: 413px)
+    .tokens-button
+      padding: 0.5rem 1.5rem
+
+  .slick-track
+    display: flex
+    align-items: flex-end
+
+    @media (max-width: 767px)
+      align-items: center
+
+  .slick-prev:before, .slick-next:before
+    color: #2eb6f7
+
+  .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before
+    color: #fff
+

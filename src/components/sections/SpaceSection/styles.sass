@@ -1,0 +1,30 @@
+.space-section
+  position: relative
+  padding-top: 100px
+  padding-bottom: 100px
+  // height: 1000px
+  background: #151f31
+  // background: #151f31 url('./img/space.png') no-repeat
+  // background-size: 150%
+  // background-position: center
+  overflow: hidden
+  z-index: 102
+
+  img
+    position: relative
+    displayL block
+    max-width: 120%
+    margin-left: -10%
+    transition: all 0.2s ease
+
+    @media (max-width: 1200px)
+      max-width: 160%
+      margin-left: -30%
+
+    @media (max-width: 992px)
+      max-width: 200%
+      margin-left: -50%
+
+    @media (max-width: 768px)
+      max-width: 220%
+      margin-left: -60%

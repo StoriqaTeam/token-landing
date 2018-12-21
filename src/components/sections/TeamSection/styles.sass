@@ -1,0 +1,92 @@
+.team-section
+  margin-top: 0
+  position: relative
+  z-index: 102
+
+  .angle-section
+    background-color: #151f31
+    width: 100%
+    padding-top: 50px
+    padding-bottom: 50px
+
+  .team-section--show-all-button
+    font-family: Open_Sans, sans-serif
+    color: #fff
+    font-size: 14px
+    text-decoration: underline
+    cursor: pointer
+    margin-top: 38px
+
+  .darkened-block
+    padding: 0 !important
+    background-color: #151F31 !important
+    border-color: rgba(198, 198, 198, 0.55)
+    max-width: 1080px
+    margin-top: 80px
+
+    @media (max-width: 1199px)
+      margin-right: 20px
+      margin-left: 20px
+
+  .see-all-link
+    margin-top: 50px
+
+  .team-section--members
+    display: flex
+    flex-wrap: wrap
+    margin-top: 70px
+
+    .team-section--members--item
+      
+
+      .team-section--members--item--photo
+        margin: 24px auto 0
+        width: 128px
+        height: 128px
+        position: relative
+
+        img
+          border-radius: 50%
+          width: 100%
+          height: 100%
+
+        a
+          height: 32px
+          width: 32px
+          position: absolute
+          right: 0
+          bottom: 0
+
+        a + a
+          right: -20px
+          bottom: 35px
+
+      .team-section--members--item--name,
+      .team-section--members--item--position
+        margin-top: 8px
+        color: #fff
+        text-align: center
+
+      .team-section--members--item--name
+        font-family: Open_Sans_Bold, sans-serif
+        font-size: 14px
+
+      .team-section--members--item--position
+        font-family: Open_Sans, sans-serif
+        font-size: 12px
+
+      .team-section--members--item--description
+        margin-top: 12px
+        font-family: Open_Sans, sans-serif
+        font-size: 14px
+        color: rgba(255, 255, 255, 0.61)
+        text-align: center
+        line-height: 20px
+        overflow: hidden
+        flex-grow: 1
+
+      .team-section--members--item--sn
+        margin-bottom: 16px
+        margin-top: 16px
+        a + a
+          margin-left: 8px

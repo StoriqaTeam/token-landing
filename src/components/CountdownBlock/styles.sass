@@ -1,0 +1,309 @@
+.right-block
+  width: 296px
+  margin: 0 auto
+
+  @media (min-width: 768px) and (max-width: 1199px)
+    width: 100%
+
+  @media (max-width: 374px)
+    width: 290px
+
+  .info-block
+    width: 100%
+
+    .slide-wrapper
+      width: 50%
+      height: 180px
+      padding: 10px
+
+      .slide
+        position: relative
+        overflow: hidden
+        width: 100%
+        height: 100%
+        border: 1px solid
+        border-color: #9a9a9a
+        border-radius: 10px
+        background: rgba(0,0,0,.5)
+
+        .finish-wrap
+          height: 50px
+          transform: rotate(8deg)
+          opacity: 0.95
+          background-color: #4a4a4a
+          font-size: 18px
+          font-weight: bold
+          text-align: center
+          color: #9a9a9a
+          position: absolute
+          top: 0
+          bottom: 0
+          left: -5px
+          margin: auto
+          width: calc(100% + 10px)
+          z-index: 5
+          line-height: 48px
+
+        &.disabled
+          border-color: rgba(219,219,219,.5)
+
+          .period, .ts, .label, .value
+            color: #9a9a9a
+
+        &.last
+          // border: 0
+
+          img
+            width: 90px
+
+        .period
+          font-size: 16px
+
+        .bottom
+          height: 100%
+          line-height: 22px
+
+          .token-price, .bonus
+            .label
+              font-size: 12px
+
+            .value
+              font-size: 22px
+
+        .ts
+          height: 100%
+          font-size: 22px
+
+    .slide-wrapper-active
+      width: 100%
+      height: 316px
+
+      .slide
+        width: 100%
+        height: 100%
+        border: 2px solid
+        border-color: #2fbafd
+        border-radius: 10px
+        background: rgba(46,46,46,.9)
+        z-index: 1
+
+        .top
+          width: 100%
+          height: 48%
+
+          .period
+            font-size: 22px
+
+        .bottom
+          position: relative
+          width: 100%
+          height: 52%
+
+          &:before
+            content: ''
+            position: absolute
+            top: -5px
+            width: 100%
+            border-top: 1px solid rgba(255,255,255,0.4)
+
+          &:after
+            content: ''
+            position: absolute
+            top: -5px
+            bottom: 61%
+            left: 50%
+            width: 1px
+            border-left: 1px solid rgba(255,255,255,0.4)
+
+          .up
+            width: 100%
+            min-height: 60px
+
+            .token-price
+              .label
+                font-size: 12px
+
+              .value
+                display: inline-block
+                font-size: 32px
+                line-height: 30px
+                margin-top: 5px
+
+                @media (min-width: 1199px) and (max-width: 1304px)
+                  font-size: 28px
+
+            .bonus
+              .label
+                font-size: 12px
+
+              .value
+                display: inline-block
+                font-size: 32px
+                line-height: 30px
+                margin-top: 5px
+
+                @media (min-width: 1199px) and (max-width: 1304px)
+                  font-size: 28px
+
+            div
+              width: 50%
+
+          .down
+            width: 100%
+            // height: 40%
+
+            .tokens-button
+              width: 100%
+              padding: 0
+              height: 44px
+              line-height: 38px
+              font-size: 16px
+
+          .bottom-text
+            font-size: 14px
+            margin-bottom: 3px
+            // height: 20%
+
+    .countdown-wrapper
+      .countdown
+        margin-top: 15px
+
+        .countdown-col
+          font-size: 32px
+          line-height: 30px
+
+          p
+            span
+              font-size: 10px
+
+            strong
+              font-family: 'Open_Sans_Bold', Arial, sans-serif
+
+    .arrow
+      position: absolute
+      bottom: 72px
+      margin-top: -15px
+      display: block
+      height: 40px
+      width: 40px
+      z-index: 5
+      cursor: pointer
+      opacity: .8
+
+      &:hover
+        opacity: 1
+
+    .slick-track
+      display: flex
+      align-items: flex-end
+
+    .slick-prev:before, .slick-next:before
+      color: #2eb6f7
+
+    .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before
+      color: #fff
+
+
+
+.collect
+  position: relative
+  width: 100%
+  min-height: 250px
+  margin-top: 50px
+
+  @media (max-width: 1199px) and (min-width: 768px)
+    margin: 25px 0 0 50px
+
+  .label
+    font-size: 14px
+
+  .amount
+    font-size: 40px
+
+  .stq-amount
+    margin-top: 50px
+    font-size: 20px
+
+  .thermometer
+    position: relative
+    width: 100%
+    height: 28px
+    padding: 2px
+    border: 2px solid #2eb6f7
+    border-radius: 6px
+
+    .left-hint
+      position: absolute
+      top: -30px
+      left: 0
+      font-size: 14px
+
+    .right-hint
+      position: absolute
+      top: -30px
+      right: 0
+      font-size: 14px
+
+    .right-bottom-hint
+      position: absolute
+      top: 30px
+      right: 0
+      font-size: 14px
+
+    .soft-cap-hint
+      position: absolute
+      top: 30px
+      // left: 41.7%
+      font-size: 14px
+
+      &:before
+        content: ''
+        position: absolute
+        bottom: 0px
+        left: -4px
+        border-right: 2px solid #2eb6f7
+        height: 35px
+        z-index: 1
+
+      & > div
+        position: absolute
+        right: -22px
+        white-space: nowrap
+
+        @media (max-width: 1304px) and (min-width: 1200px)
+          right: -1px
+
+        span
+          color: #2eb6f7
+
+    .soft-cap-top-hint
+      position: absolute
+      top: -30px
+      // left: 40%
+      font-size: 14px
+
+    .thermometer-item
+      position: relative
+      display: inline-block
+
+      &.left
+        height: 20px
+        border-right: 0
+        border-radius: 3px
+        background: linear-gradient(to left top, rgba(68, 193, 187, 0) 53.9%, #44c1fd 51%, #44c1fd 78%, rgba(68, 193, 187, 0) 70%), linear-gradient(to left top, #44c1fd 28%, rgba(189, 107, 127, 0) 30%)
+        background-size: 2em 6em
+        background-color: #2fbafd
+
+      &.right
+        position: relative
+        height: 20px
+        border-left: 0
+
+
+
+
+
+
+
+
+
